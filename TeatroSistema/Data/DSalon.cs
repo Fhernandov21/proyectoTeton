@@ -27,7 +27,7 @@ namespace TeatroSistema.Data
                 //NoSalon 
                 SqlParameter noSalon = new SqlParameter();
                 noSalon.ParameterName = "@NoSalon";
-                noSalon.SqlDbType = System.Data.SqlDbType.VarChar;
+                noSalon.SqlDbType = System.Data.SqlDbType.Int;
                 noSalon.Size = 50;
                 noSalon.Value = NoSalon;
                 cmd.Parameters.Add(noSalon);
@@ -43,7 +43,7 @@ namespace TeatroSistema.Data
                 //Path  
                 SqlParameter VPrecio = new SqlParameter();
                 VPrecio.ParameterName = "@Precio";
-                VPrecio.SqlDbType = System.Data.SqlDbType.VarChar;
+                VPrecio.SqlDbType = System.Data.SqlDbType.Float;
                 VPrecio.Size = 50;
                 VPrecio.Value = Precio;
                 cmd.Parameters.Add(VPrecio);
@@ -51,7 +51,7 @@ namespace TeatroSistema.Data
                 //Capacidad 
                 SqlParameter parCapacidad = new SqlParameter();
                 parCapacidad.ParameterName = "@CantidadPersonas";
-                parCapacidad.SqlDbType = System.Data.SqlDbType.VarChar;
+                parCapacidad.SqlDbType = System.Data.SqlDbType.Int;
                 parCapacidad.Size = 50;
                 parCapacidad.Value = Capacidad;
                 cmd.Parameters.Add(parCapacidad);
@@ -86,10 +86,10 @@ namespace TeatroSistema.Data
                 cmd.CommandText = "ActualizarSalon";
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                DCliente.crearParametro(cmd, "@NoSalon", SqlDbType.VarChar, NoSalon, 50);
+                DCliente.crearParametro(cmd, "@NoSalon", SqlDbType.Int, NoSalon, 50);
                 DCliente.crearParametro(cmd, "@Nombre", SqlDbType.VarChar, Nombre, 50);
-                DCliente.crearParametro(cmd, "@Precio", SqlDbType.VarChar, Precio, 50);
-                DCliente.crearParametro(cmd, "@Path", SqlDbType.VarChar, path, 250);
+                DCliente.crearParametro(cmd, "@Precio", SqlDbType.Float, Precio, 50);
+                DCliente.crearParametro(cmd, "@Path", SqlDbType.Int, path, 250);
                 DCliente.crearParametro(cmd, "@Capacidad", SqlDbType.VarChar, CapacidadPersonas, 50);
 
                 pq = cmd.ExecuteNonQuery() == 1 ? "Ok" : "NotOk";

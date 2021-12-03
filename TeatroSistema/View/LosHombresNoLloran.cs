@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TeatroSistema.Controller;
+using TeatroSistema.Data;
 
 namespace TeatroSistema.View
 {
@@ -80,6 +81,13 @@ namespace TeatroSistema.View
             serviciosReservados.Columns.Add("Cantidad");
             serviciosReservados.Columns.Add("SubTotal");
             dgvServiciosReservados.DataSource = serviciosReservados;
+            DataTable salones = new DataTable();
+            salones = CSalon.MostrarSalones();
+            foreach (DataRow row in salones.Rows)
+            {
+                cmbSalon.Items.Add(row[1].ToString());
+            }
+            cmbSalon.SelectedIndex = 0;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -253,6 +261,14 @@ namespace TeatroSistema.View
             {
                 return;
             }
+        }
+
+        private void cmbSalon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable salones = new DataTable();
+            salones = CSalon.MostrarSalones();
+            lblPrecioSalon.Text = "Precio: "+salones.Rows[cmbSalon.SelectedIndex]["Precio"].ToString();
+            lblCapacidadSalon.Text = "Capacidad: "+salones.Rows[cmbSalon.SelectedIndex]["CapacidadPersonas"].ToString()+" Personas";
         }
     }
 }

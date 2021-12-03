@@ -75,8 +75,10 @@ namespace TeatroSistema.View
             this.label11 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbSalon = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.lblPrecioSalon = new System.Windows.Forms.Label();
+            this.lblCapacidadSalon = new System.Windows.Forms.Label();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -108,7 +110,7 @@ namespace TeatroSistema.View
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1237, 42);
+            this.BarraTitulo.Size = new System.Drawing.Size(1249, 42);
             this.BarraTitulo.TabIndex = 0;
             // 
             // btn
@@ -156,7 +158,7 @@ namespace TeatroSistema.View
             // btnRestaurar
             // 
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRestaurar.Location = new System.Drawing.Point(1370, 4);
+            this.btnRestaurar.Location = new System.Drawing.Point(1382, 4);
             this.btnRestaurar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(33, 31);
@@ -168,7 +170,7 @@ namespace TeatroSistema.View
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Location = new System.Drawing.Point(1329, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(1341, 4);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(33, 31);
@@ -180,7 +182,7 @@ namespace TeatroSistema.View
             // 
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(1370, 4);
+            this.btnMaximizar.Location = new System.Drawing.Point(1382, 4);
             this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(33, 31);
@@ -193,7 +195,7 @@ namespace TeatroSistema.View
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1411, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(1423, 4);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(33, 31);
@@ -260,7 +262,7 @@ namespace TeatroSistema.View
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(192, 137);
+            this.textBox2.Location = new System.Drawing.Point(192, 136);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(269, 22);
@@ -369,7 +371,7 @@ namespace TeatroSistema.View
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1013, 296);
+            this.label14.Location = new System.Drawing.Point(1051, 296);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(89, 24);
             this.label14.TabIndex = 30;
@@ -377,7 +379,7 @@ namespace TeatroSistema.View
             // 
             // spnCantidad
             // 
-            this.spnCantidad.Location = new System.Drawing.Point(1126, 300);
+            this.spnCantidad.Location = new System.Drawing.Point(1146, 300);
             this.spnCantidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.spnCantidad.Name = "spnCantidad";
             this.spnCantidad.Size = new System.Drawing.Size(91, 22);
@@ -398,7 +400,7 @@ namespace TeatroSistema.View
             this.dgvServicios.RowHeadersWidth = 51;
             this.dgvServicios.RowTemplate.Height = 24;
             this.dgvServicios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvServicios.Size = new System.Drawing.Size(383, 199);
+            this.dgvServicios.Size = new System.Drawing.Size(421, 199);
             this.dgvServicios.TabIndex = 26;
             // 
             // dgvItinerario
@@ -467,7 +469,7 @@ namespace TeatroSistema.View
             this.btnAddService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddService.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddService.ForeColor = System.Drawing.Color.Snow;
-            this.btnAddService.Location = new System.Drawing.Point(1014, 337);
+            this.btnAddService.Location = new System.Drawing.Point(1052, 337);
             this.btnAddService.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddService.Name = "btnAddService";
             this.btnAddService.Size = new System.Drawing.Size(101, 48);
@@ -511,7 +513,7 @@ namespace TeatroSistema.View
             this.dgvServiciosReservados.RowHeadersWidth = 51;
             this.dgvServiciosReservados.RowTemplate.Height = 24;
             this.dgvServiciosReservados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvServiciosReservados.Size = new System.Drawing.Size(383, 136);
+            this.dgvServiciosReservados.Size = new System.Drawing.Size(421, 136);
             this.dgvServiciosReservados.TabIndex = 26;
             // 
             // label9
@@ -557,7 +559,7 @@ namespace TeatroSistema.View
             this.btnEliminarServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarServicio.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarServicio.ForeColor = System.Drawing.Color.Snow;
-            this.btnEliminarServicio.Location = new System.Drawing.Point(1017, 529);
+            this.btnEliminarServicio.Location = new System.Drawing.Point(1052, 525);
             this.btnEliminarServicio.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarServicio.Name = "btnEliminarServicio";
             this.btnEliminarServicio.Size = new System.Drawing.Size(101, 48);
@@ -581,7 +583,7 @@ namespace TeatroSistema.View
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(628, 139);
+            this.label10.Location = new System.Drawing.Point(628, 162);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(94, 24);
@@ -592,7 +594,7 @@ namespace TeatroSistema.View
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("MS Reference Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(628, 181);
+            this.label11.Location = new System.Drawing.Point(628, 204);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(104, 24);
@@ -601,7 +603,7 @@ namespace TeatroSistema.View
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(775, 140);
+            this.textBox5.Location = new System.Drawing.Point(775, 163);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(269, 22);
@@ -609,19 +611,21 @@ namespace TeatroSistema.View
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(775, 182);
+            this.textBox6.Location = new System.Drawing.Point(775, 205);
             this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(90, 22);
             this.textBox6.TabIndex = 7;
             // 
-            // comboBox1
+            // cmbSalon
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(775, 95);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(269, 24);
-            this.comboBox1.TabIndex = 37;
+            this.cmbSalon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSalon.FormattingEnabled = true;
+            this.cmbSalon.Location = new System.Drawing.Point(775, 95);
+            this.cmbSalon.Name = "cmbSalon";
+            this.cmbSalon.Size = new System.Drawing.Size(269, 24);
+            this.cmbSalon.TabIndex = 37;
+            this.cmbSalon.SelectedIndexChanged += new System.EventHandler(this.cmbSalon_SelectedIndexChanged);
             // 
             // label15
             // 
@@ -634,13 +638,31 @@ namespace TeatroSistema.View
             this.label15.TabIndex = 2;
             this.label15.Text = "Información del Evento";
             // 
+            // lblPrecioSalon
+            // 
+            this.lblPrecioSalon.AutoSize = true;
+            this.lblPrecioSalon.Location = new System.Drawing.Point(771, 131);
+            this.lblPrecioSalon.Name = "lblPrecioSalon";
+            this.lblPrecioSalon.Size = new System.Drawing.Size(52, 17);
+            this.lblPrecioSalon.TabIndex = 13;
+            this.lblPrecioSalon.Text = "Precio:";
+            // 
+            // lblCapacidadSalon
+            // 
+            this.lblCapacidadSalon.AutoSize = true;
+            this.lblCapacidadSalon.Location = new System.Drawing.Point(890, 131);
+            this.lblCapacidadSalon.Name = "lblCapacidadSalon";
+            this.lblCapacidadSalon.Size = new System.Drawing.Size(79, 17);
+            this.lblCapacidadSalon.TabIndex = 13;
+            this.lblCapacidadSalon.Text = "Capacidad:";
+            // 
             // LosHombresNoLloran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(1237, 825);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(1249, 825);
+            this.Controls.Add(this.cmbSalon);
             this.Controls.Add(this.txtDuracion);
             this.Controls.Add(this.lblItinerario);
             this.Controls.Add(this.btnEliminarServicio);
@@ -658,6 +680,8 @@ namespace TeatroSistema.View
             this.Controls.Add(this.cmbHoraInicio);
             this.Controls.Add(this.cmbMinutoInicio);
             this.Controls.Add(this.label12);
+            this.Controls.Add(this.lblCapacidadSalon);
+            this.Controls.Add(this.lblPrecioSalon);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.calendario);
@@ -750,7 +774,9 @@ namespace TeatroSistema.View
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbSalon;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblPrecioSalon;
+        private System.Windows.Forms.Label lblCapacidadSalon;
     }
 }
