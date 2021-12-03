@@ -242,5 +242,19 @@ namespace TeatroSistema.View
             }
             cargarEmpleados();
         }
+
+        private void btnDetalles_Click(object sender, EventArgs e)
+        {
+            if (dgvEmpleados.SelectedRows.Count != 1)
+            {
+                MessageBox.Show("Seleccione una única fila", "Sistema Teatro", MessageBoxButtons.OK);
+                return;
+            }
+            FrmDetalleEmpleado fdet = new FrmDetalleEmpleado();
+            int.TryParse(dgvEmpleados.Rows[dgvEmpleados.CurrentRow.Index].Cells[0].Value.ToString(), out int id);
+
+            fdet.CargarEmpleado(id);
+            fdet.Show();
+        }
     }
 }

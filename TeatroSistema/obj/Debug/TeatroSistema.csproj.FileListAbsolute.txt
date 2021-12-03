@@ -133,3 +133,5 @@ C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.csproj.CopyComplete
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.exe
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.pdb
+C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.FrmDetalleEmpleado.resources
+C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.FrmServiciosV2.resources

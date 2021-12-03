@@ -178,5 +178,35 @@ namespace TeatroSistema.Data
 
             return rpta;
         }
+
+        public DataTable Mostrar_Detalle_Empleado(int IdEmpleado)
+        {
+            DataTable dtEmpleados = new DataTable("Mostrar_Empleados");
+            SqlConnection con = new SqlConnection();
+
+            try
+            {
+                con.ConnectionString = Conexion.Cn;
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "Mostrar_Detalle_Empleado";
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter idPar = new SqlParameter();
+                idPar.ParameterName = "@IDEmpleado";
+                idPar.SqlDbType = SqlDbType.Int;
+                idPar.Value = IdEmpleado;
+                cmd.Parameters.Add(idPar);
+
+                SqlDataAdapter dat = new SqlDataAdapter(cmd);
+                dat.Fill(dtEmpleados);
+
+            }
+            catch (Exception ex)
+            {
+                dtEmpleados = null;
+            }
+            return dtEmpleados;
+        }
     }
 }

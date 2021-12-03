@@ -35,5 +35,10 @@ namespace TeatroSistema.Controller
         {
             return new DEmpleado().Cambiar_Estado_Empleado(IdEmpleado);
         }
+
+        public static DataTable Mostrar_Detalle_Empleado(int IdEmpleado)
+        {
+            return new DEmpleado().Mostrar_Detalle_Empleado(IdEmpleado);
+        }
     }
 }

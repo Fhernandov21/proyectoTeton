@@ -50,7 +50,7 @@ namespace TeatroSistema.View.Subframes
         private void button2_Click(object sender, EventArgs e)
         {
             SeleccionandoBoton((Button)sender);
-            FrmMain.MostrarFrames(Content, new FrmServicios());
+            FrmMain.MostrarFrames(Content, new FrmServiciosV2());
         }
 
         private void button3_Click(object sender, EventArgs e)
