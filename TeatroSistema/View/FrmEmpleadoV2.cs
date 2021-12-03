@@ -1,0 +1,184 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using TeatroSistema.Controller;
+
+namespace TeatroSistema.View
+{
+    public partial class FrmEmpleadoV2 : Form
+    {
+        DataTable dt = new DataTable();
+        public FrmEmpleadoV2()
+        {
+            InitializeComponent();
+        }
+        public string desde = "";
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private static extern void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(IntPtr hWindm, int wMsg, int wParam, int lParam);
+
+        private void ArrastrarVentana(object sender, MouseEventArgs args)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void Header_MouseDown(object sender, MouseEventArgs e)
+        {
+            ArrastrarVentana(sender, e);
+        }
+
+        private void FrmEmpleadoV2_Load(object sender, EventArgs e)
+        {
+            cerrarCampos();
+            cargarEmpleados();
+            bloquaerBotonesForm();
+            panelTable.Width = 656;
+            dt = CEmpleado.Mostrar_Empleados();
+            this.dgvEmpleados.DataSource = dt;
+            dgvEmpleados.MultiSelect = false;
+            dgvEmpleados.ReadOnly = true;
+            //if (desde.Equals(""))
+            //{
+
+            //    btnSelect.Enabled = false;
+            //    btnSelect.Hide();
+            //}
+            //else
+            //{
+            //    btnSelect.Enabled = true;
+            //    btnSelect.Show();
+            //}
+        }
+
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+         
+            if (btnEstado.Enabled == false)
+            {
+                int IdEmpleado = dgvEmpleados.Rows.Count + 1;
+                string PrimerNombre = txtprimerNombre.Text;
+                string SegundoNombre = txtsegundoNombre.Text;
+                string PrimerApellido = txtprimerApellido.Text;
+                string SegundoApellido = txtsegundoApellido.Text;
+                string Cedula = txtCedula.Text;
+                string Direccion = txtDireccion.Text;
+                float Salario = float.Parse(txtCedula.Text);
+                string Codigo = txtCodigo.Text;
+
+                string rept = CEmpleado.Nuevo_Empleado(IdEmpleado, PrimerNombre, SegundoNombre, PrimerApellido,
+                    SegundoApellido, Cedula, Direccion, Salario, Codigo);
+                Console.WriteLine(rept);
+                if (rept.Equals("Ok"))
+                {
+                    MessageBox.Show("Empleado agregado con Éxito", "Sistema de teatro", MessageBoxButtons.OK);
+                    desbloquearBotonesTabla();
+                }
+                else
+                {
+                    MessageBox.Show("Error al Añadir el Empleado", "Sistema de teatro", MessageBoxButtons.OK);
+                    return;
+                }
+            }
+            cargarEmpleados();
+            bloquaerBotonesForm();
+            cerrarCampos();
+            limpiarCampos();
+            dgvEmpleados.Enabled = true;
+        }
+
+        private void cargarEmpleados()
+        {
+            dgvEmpleados.DataSource = CEmpleado.Mostrar_Empleados();
+        }
+        private void limpiarCampos()
+        {
+            lblIdEmpleado.Text = "Id Empleado:";
+            txtprimerNombre.Text = "";
+            txtprimerApellido.Text = "";
+            txtsegundoNombre.Text = "";
+            txtsegundoApellido.Text = "";
+            txtCedula.Text = "";
+            txtDireccion.Text = "";
+            txtSalario.Text = "";
+            txtCodigo.Text = "";
+
+        }
+
+        private void desbloquearBotonesTabla()
+        {
+            btnEstado.Enabled = true;
+            btnActualizar.Enabled = true;
+            btnNuevo.Enabled = true;
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            btnEstado.Enabled = false;
+            dgvEmpleados.Enabled = false;
+            abrirCampos();
+            bloquearBotonesTabla();
+            desbloquearBotonesForm();
+            limpiarCampos();
+        }
+
+        private void bloquearBotonesTabla()
+        {
+            btnEstado.Enabled = false;
+            btnNuevo.Enabled = false;
+            btnActualizar.Enabled = false;
+        }
+
+        private void bloquaerBotonesForm()
+        {
+            btnSave.Enabled = false;
+            btnCancelar.Enabled = false;
+        }
+
+        private void desbloquearBotonesForm()
+        {
+            btnSave.Enabled = true;
+            btnCancelar.Enabled = true;
+        }
+        
+        private void abrirCampos()
+        {
+            txtprimerNombre.Enabled = true;
+            txtprimerApellido.Enabled = true;
+            txtsegundoNombre.Enabled = true;
+            txtsegundoApellido.Enabled = true;
+            txtCedula.Enabled = true;
+            txtDireccion.Enabled = true;
+            txtSalario.Enabled = true;
+            txtCodigo.Enabled = true;
+        }
+        private void cerrarCampos()
+        {
+            txtprimerNombre.Enabled = false;
+            txtprimerApellido.Enabled = false;
+            txtsegundoNombre.Enabled = false;
+            txtsegundoApellido.Enabled = false;
+            txtCedula.Enabled = false;
+            txtDireccion.Enabled = false;
+            txtSalario.Enabled = false;
+            txtCodigo.Enabled = false;
+        }
+    }
+}
