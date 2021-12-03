@@ -80,7 +80,7 @@ namespace TeatroSistema.View
                 string SegundoApellido = txtsegundoApellido.Text;
                 string Cedula = txtCedula.Text;
                 string Direccion = txtDireccion.Text;
-                float Salario = float.Parse(txtCedula.Text);
+                float Salario = float.Parse(txtSalario.Text);
                 string Codigo = txtCodigo.Text;
 
                 string rept = CEmpleado.Nuevo_Empleado(IdEmpleado, PrimerNombre, SegundoNombre, PrimerApellido,
@@ -93,7 +93,7 @@ namespace TeatroSistema.View
                 }
                 else
                 {
-                    MessageBox.Show("Error al Añadir el Empleado", "Sistema de teatro", MessageBoxButtons.OK);
+                    MessageBox.Show("Error al Añadir el Empleado "+rept+" "+Salario, "Sistema de teatro", MessageBoxButtons.OK);
                     return;
                 }
             }

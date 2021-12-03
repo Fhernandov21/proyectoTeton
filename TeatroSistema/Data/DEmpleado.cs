@@ -55,7 +55,7 @@ namespace TeatroSistema.Data
                 DCliente.crearParametro(cmd, "@IdEmpleado", SqlDbType.Int, IDEmpleado, 50);
 
                 //primer nombre
-                DCliente.crearParametro(cmd, "@PrimerNombre", SqlDbType.VarChar, PrimerNombre, 50);
+                DCliente.crearParametro(cmd, "@PrimerNombre ", SqlDbType.VarChar, PrimerNombre, 50);
 
                 //segundo nombre
                 DCliente.crearParametro(cmd, "@SegundoNombre", SqlDbType.VarChar, SegundoNombre, 50);
@@ -77,14 +77,15 @@ namespace TeatroSistema.Data
                 sqlpar.ParameterName = "@SalarioMensual";
                 sqlpar.SqlDbType = SqlDbType.Float;
                 sqlpar.Size = 50;
+                sqlpar.Value = Salario;
                 cmd.Parameters.Add(sqlpar);
 
                 //CodEmp
                 DCliente.crearParametro(cmd, "@CodigoEmpleado", SqlDbType.VarChar, Codigo, 30);
 
+               
 
-
-                respuesta = cmd.ExecuteNonQuery() == 2 ? "Ok" : "NotOK";
+                respuesta = cmd.ExecuteNonQuery() == 1 ? "Ok" : "NotOK";
             }
             catch (Exception ex)
             {
