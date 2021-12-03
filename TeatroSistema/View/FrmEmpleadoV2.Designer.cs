@@ -413,6 +413,7 @@ namespace TeatroSistema.View
             this.btnEstado.TabIndex = 24;
             this.btnEstado.Text = "Cambiar Estado";
             this.btnEstado.UseVisualStyleBackColor = true;
+            this.btnEstado.Click += new System.EventHandler(this.btnEstado_Click);
             // 
             // label1
             // 

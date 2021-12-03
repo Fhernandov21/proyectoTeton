@@ -30,5 +30,10 @@ namespace TeatroSistema.Controller
             return new DEmpleado().Actualizar_Empleado(IDEmpleado, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido,
                 Cedula, Direccion, Salario, Codigo);
         }
+
+        public static string Cambiar_Estado_Empleado(int IdEmpleado)
+        {
+            return new DEmpleado().Cambiar_Estado_Empleado(IdEmpleado);
+        }
     }
 }

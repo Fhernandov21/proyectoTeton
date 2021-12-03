@@ -152,5 +152,31 @@ namespace TeatroSistema.Data
             }
             return respuesta;
         }
+
+        public string Cambiar_Estado_Empleado(int IdEmpleado)
+        {
+            string rpta = "";
+            SqlConnection con = new SqlConnection();
+            try
+            {
+                con.ConnectionString = Conexion.Cn;
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "Cambiar_Estado_Empleado";
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                DCliente.crearParametro(cmd, "@IdEmpleado", SqlDbType.Int, IdEmpleado, 50);
+
+                rpta = cmd.ExecuteNonQuery() == 1 ? "Ok" : "NotOK";
+            }
+            catch (Exception ex)
+            {
+                rpta = ex.Message;
+            }
+
+            return rpta;
+        }
     }
 }

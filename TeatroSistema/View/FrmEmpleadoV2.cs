@@ -225,5 +225,22 @@ namespace TeatroSistema.View
             lblIdEmpleado.Text = "Id Empleado: " + dgvEmpleados.CurrentRow.Cells[0].Value.ToString();
 
         }
+
+        private void btnEstado_Click(object sender, EventArgs e)
+        {
+            string rpta = CEmpleado.Cambiar_Estado_Empleado(int.Parse(dgvEmpleados.CurrentRow.Cells[0].Value.ToString()));
+            if (rpta.Equals("Ok"))
+            {
+                MessageBox.Show("Estado actualizado con Éxito", "Sistema del Teatro", MessageBoxButtons.OK);
+
+            }
+            else
+            {
+                MessageBox.Show("Error al actualizar el estado del empleado "
+                    + rpta, "Sistema del Teatro", MessageBoxButtons.OK);
+                return;
+            }
+            cargarEmpleados();
+        }
     }
 }
