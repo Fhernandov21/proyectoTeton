@@ -14,10 +14,12 @@ namespace TeatroSistema.View
 {
     public partial class FrmEmpleadoV2 : Form
     {
-        DataTable dt = new DataTable();
+        
         public FrmEmpleadoV2()
         {
             InitializeComponent();
+            dgvEmpleados.MultiSelect = false;
+            dgvEmpleados.ReadOnly = true;
         }
         public string desde = "";
 
@@ -44,10 +46,6 @@ namespace TeatroSistema.View
             cargarEmpleados();
             bloquaerBotonesForm();
             panelTable.Width = 656;
-            dt = CEmpleado.Mostrar_Empleados();
-            this.dgvEmpleados.DataSource = dt;
-            dgvEmpleados.MultiSelect = false;
-            dgvEmpleados.ReadOnly = true;
             //if (desde.Equals(""))
             //{
 
@@ -85,7 +83,6 @@ namespace TeatroSistema.View
 
                 string rept = CEmpleado.Nuevo_Empleado(IdEmpleado, PrimerNombre, SegundoNombre, PrimerApellido,
                     SegundoApellido, Cedula, Direccion, Salario, Codigo);
-                Console.WriteLine(rept);
                 if (rept.Equals("Ok"))
                 {
                     MessageBox.Show("Empleado agregado con Éxito", "Sistema de teatro", MessageBoxButtons.OK);
@@ -94,6 +91,30 @@ namespace TeatroSistema.View
                 else
                 {
                     MessageBox.Show("Error al Añadir el Empleado "+rept+" "+Salario, "Sistema de teatro", MessageBoxButtons.OK);
+                    return;
+                }
+            }else
+            {
+                int.TryParse(dgvEmpleados.CurrentRow.Cells[0].Value.ToString(), out int id);
+                string PrimerNombre = txtprimerNombre.Text;
+                string SegundoNombre = txtsegundoNombre.Text;
+                string PrimerApellido = txtprimerApellido.Text;
+                string SegundoApellido = txtsegundoApellido.Text;
+                string Cedula = txtCedula.Text;
+                string Direccion = txtDireccion.Text;
+                float Salario = float.Parse(txtSalario.Text);
+                string Codigo = txtCodigo.Text;
+
+                string rept = CEmpleado.Actualizar_Empleado(Convert.ToInt32(id), PrimerNombre, SegundoNombre, PrimerApellido,
+                    SegundoApellido, Cedula, Direccion, Salario, Codigo);
+                if (rept.Equals("Ok"))
+                {
+                    MessageBox.Show("Empleado actualizado con Éxito", "Sistema de teatro", MessageBoxButtons.OK);
+                    desbloquearBotonesTabla();
+                }
+                else
+                {
+                    MessageBox.Show("Error al actualizar el Empleado", "Sistema de teatro", MessageBoxButtons.OK);
                     return;
                 }
             }
@@ -141,7 +162,6 @@ namespace TeatroSistema.View
 
         private void bloquearBotonesTabla()
         {
-            btnEstado.Enabled = false;
             btnNuevo.Enabled = false;
             btnActualizar.Enabled = false;
         }
@@ -171,6 +191,7 @@ namespace TeatroSistema.View
         }
         private void cerrarCampos()
         {
+            this.dgvEmpleados.DataSource = CEmpleado.Mostrar_Empleados();
             txtprimerNombre.Enabled = false;
             txtprimerApellido.Enabled = false;
             txtsegundoNombre.Enabled = false;
@@ -179,6 +200,30 @@ namespace TeatroSistema.View
             txtDireccion.Enabled = false;
             txtSalario.Enabled = false;
             txtCodigo.Enabled = false;
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            btnEstado.Enabled = true;
+            abrirCampos();
+            bloquearBotonesTabla();
+            desbloquearBotonesForm();
+            dgvEmpleados.Enabled = false;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            limpiarCampos();
+            cerrarCampos();
+            bloquaerBotonesForm();
+            desbloquearBotonesTabla();
+            dgvEmpleados.Enabled = true;
+        }
+
+        private void dgvEmpleados_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            lblIdEmpleado.Text = "Id Empleado: " + dgvEmpleados.CurrentRow.Cells[0].Value.ToString();
+
         }
     }
 }

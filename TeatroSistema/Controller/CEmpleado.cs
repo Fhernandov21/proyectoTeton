@@ -22,5 +22,13 @@ namespace TeatroSistema.Controller
             return new DEmpleado().Nuevo_Empleado(IDEmpleado, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido,
                 Cedula, Direccion, Salario, Codigo);
         }
+
+        public static string Actualizar_Empleado(int IDEmpleado, string PrimerNombre, string SegundoNombre,
+            string PrimerApellido, string SegundoApellido, string Cedula, string Direccion,
+            float Salario, string Codigo)
+        {
+            return new DEmpleado().Actualizar_Empleado(IDEmpleado, PrimerNombre, SegundoNombre, PrimerApellido, SegundoApellido,
+                Cedula, Direccion, Salario, Codigo);
+        }
     }
 }
