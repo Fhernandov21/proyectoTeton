@@ -10,7 +10,33 @@ namespace TeatroSistema.Data
 {
     class DEvento
     {
-        public DataTable Horas_Ocupadas (string fecha)
+
+        public string Cancelar_Evento(int idEvento)
+        {
+            SqlConnection con = new SqlConnection();
+            string rpta;
+
+            try
+            {
+                con.ConnectionString = Conexion.Cn;
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "Cancelar_Evento";
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                DCliente.crearParametro(cmd, "@IdEvento", SqlDbType.Int, idEvento, 50);
+
+                rpta = cmd.ExecuteNonQuery() == 1 ? "Ok" : "NotOk";
+
+            }catch(Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            return rpta;
+        }
+        public DataTable Horas_Ocupadas (string fecha, int NoSalon)
         {
             DataTable dtItinerario = new DataTable();
             SqlConnection con = new SqlConnection();
@@ -25,7 +51,7 @@ namespace TeatroSistema.Data
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 DCliente.crearParametro(cmd, "@Fecha", SqlDbType.VarChar, fecha, 50);
-
+                DCliente.crearParametro(cmd, "@NoSalon", SqlDbType.Int, NoSalon, 50);
 
                 SqlDataAdapter dat = new SqlDataAdapter(cmd);
                 dat.Fill(dtItinerario);
@@ -38,6 +64,28 @@ namespace TeatroSistema.Data
             return dtItinerario;
         }
 
+        public DataTable Mostrar_EventosPendientes(string fecha)
+        {
+            SqlConnection con = new SqlConnection();
+            DataTable dt = new DataTable();
 
+            try
+            {
+                con.ConnectionString = Conexion.Cn;
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "Mostrar_EventosPendientes";
+                cmd.CommandType = CommandType.StoredProcedure;
+                DCliente.crearParametro(cmd, "@Fecha", SqlDbType.VarChar, fecha, 50);
+                SqlDataAdapter dat = new SqlDataAdapter(cmd);
+                dat.Fill(dt);
+                
+            }
+            catch(Exception ex)
+            {
+                dt = null;
+            }
+            return dt;
+        }
     }
 }

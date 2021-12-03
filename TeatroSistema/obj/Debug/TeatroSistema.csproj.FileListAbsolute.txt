@@ -88,3 +88,4 @@ C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWAL
 C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.Authentication.xml
 C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Newtonsoft.Json.xml
 C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\obj\Debug\TeatroSistema.csproj.CopyComplete
+C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\obj\Debug\TeatroSistema.View.frmEventos.resources

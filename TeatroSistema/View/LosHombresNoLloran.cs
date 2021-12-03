@@ -62,6 +62,7 @@ namespace TeatroSistema.View
 
         private void LosHombresNoLloran_Load(object sender, EventArgs e)
         {
+            cargarItinerario();
             calendario.MaxSelectionCount = 1;
             cargarCmbs();
             DataTable dtServicios = CServicio.Mostrar_Servicios();
@@ -104,12 +105,8 @@ namespace TeatroSistema.View
 
         private void calendario_DateSelected(object sender, DateRangeEventArgs e)
         {
-            
-            string date = calendario.SelectionStart.Year + "-"+
-                          calendario.SelectionStart.Month + "-"+
-                          calendario.SelectionStart.Day;
-            lblItinerario.Text = "Itinerario del día " + date;
-            dgvItinerario.DataSource = CEvento.Horas_Ocupadas(date);
+
+            cargarItinerario();
             
         }
 
@@ -262,13 +259,26 @@ namespace TeatroSistema.View
                 return;
             }
         }
-
+        private void cargarItinerario()
+        {
+            string date = calendario.SelectionStart.Year + "-" +
+                          calendario.SelectionStart.Month + "-" +
+                          calendario.SelectionStart.Day;
+            int NoSalon = cmbSalon.SelectedIndex+1;
+            dgvItinerario.DataSource = CEvento.Horas_Ocupadas(date, NoSalon);
+        }
         private void cmbSalon_SelectedIndexChanged(object sender, EventArgs e)
         {
+            cargarItinerario(); 
             DataTable salones = new DataTable();
             salones = CSalon.MostrarSalones();
             lblPrecioSalon.Text = "Precio: "+salones.Rows[cmbSalon.SelectedIndex]["Precio"].ToString();
             lblCapacidadSalon.Text = "Capacidad: "+salones.Rows[cmbSalon.SelectedIndex]["CapacidadPersonas"].ToString()+" Personas";
+        }
+
+        private void calendario_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
         }
     }
 }

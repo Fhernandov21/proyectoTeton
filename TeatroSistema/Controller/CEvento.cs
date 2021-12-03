@@ -11,10 +11,13 @@ namespace TeatroSistema.Controller
     class CEvento
     {
 
-        public static DataTable Horas_Ocupadas(string fecha)
+        public static DataTable Horas_Ocupadas(string fecha, int NoSalon)
         {
-            return new DEvento().Horas_Ocupadas(fecha);
+            return new DEvento().Horas_Ocupadas(fecha, NoSalon);
         }
-
+        public static DataTable Mostrar_EventosPendientes(string fecha)
+        {
+            return new DEvento().Mostrar_EventosPendientes(fecha);
+        }
     }
 }

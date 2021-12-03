@@ -42,7 +42,7 @@ namespace TeatroSistema.View
         private void calendario_DateSelected(object sender, DateRangeEventArgs e)
         {
             lblItinerario.Text = "Itinerario del día " + fechaSeleccionada();
-            dgvItinerario.DataSource =  CEvento.Horas_Ocupadas(fechaSeleccionada());
+            dgvItinerario.DataSource =  CEvento.Horas_Ocupadas(fechaSeleccionada(), cmbSalon.SelectedIndex);
         }
     }
 }
