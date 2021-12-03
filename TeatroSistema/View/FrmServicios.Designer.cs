@@ -45,6 +45,11 @@ namespace TeatroSistema.View
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCode = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spnStock)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +63,7 @@ namespace TeatroSistema.View
             this.dgvServicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvServicios.Location = new System.Drawing.Point(9, 50);
-            this.dgvServicios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvServicios.Margin = new System.Windows.Forms.Padding(2);
             this.dgvServicios.Name = "dgvServicios";
             this.dgvServicios.RowHeadersWidth = 51;
             this.dgvServicios.RowTemplate.Height = 24;
@@ -101,7 +106,7 @@ namespace TeatroSistema.View
             // txtDesc
             // 
             this.txtDesc.Location = new System.Drawing.Point(489, 83);
-            this.txtDesc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDesc.Margin = new System.Windows.Forms.Padding(2);
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(108, 20);
             this.txtDesc.TabIndex = 3;
@@ -109,7 +114,7 @@ namespace TeatroSistema.View
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(10, 260);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(89, 44);
             this.btnAdd.TabIndex = 5;
@@ -120,7 +125,7 @@ namespace TeatroSistema.View
             // btnActualizar
             // 
             this.btnActualizar.Location = new System.Drawing.Point(104, 260);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(89, 44);
             this.btnActualizar.TabIndex = 5;
@@ -131,7 +136,7 @@ namespace TeatroSistema.View
             // btnEstado
             // 
             this.btnEstado.Location = new System.Drawing.Point(199, 260);
-            this.btnEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEstado.Margin = new System.Windows.Forms.Padding(2);
             this.btnEstado.Name = "btnEstado";
             this.btnEstado.Size = new System.Drawing.Size(89, 44);
             this.btnEstado.TabIndex = 5;
@@ -152,7 +157,7 @@ namespace TeatroSistema.View
             // spnStock
             // 
             this.spnStock.Location = new System.Drawing.Point(489, 154);
-            this.spnStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.spnStock.Margin = new System.Windows.Forms.Padding(2);
             this.spnStock.Name = "spnStock";
             this.spnStock.Size = new System.Drawing.Size(106, 20);
             this.spnStock.TabIndex = 4;
@@ -160,7 +165,7 @@ namespace TeatroSistema.View
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(395, 209);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(89, 31);
             this.btnSave.TabIndex = 5;
@@ -171,7 +176,7 @@ namespace TeatroSistema.View
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(506, 209);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(89, 31);
             this.btnCancelar.TabIndex = 5;
@@ -182,7 +187,7 @@ namespace TeatroSistema.View
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(489, 123);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(108, 20);
             this.txtPrecio.TabIndex = 6;
@@ -211,16 +216,71 @@ namespace TeatroSistema.View
             // 
             this.txtCode.Enabled = false;
             this.txtCode.Location = new System.Drawing.Point(489, 56);
-            this.txtCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCode.Margin = new System.Windows.Forms.Padding(2);
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(108, 20);
             this.txtCode.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(517, 106);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 31);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Cancelar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(406, 106);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(89, 31);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(210, 157);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(89, 44);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Cambiar Estado";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(115, 157);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(89, 44);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Actualizar";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(21, 157);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(89, 44);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "Añadir nuevo Servicio";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // FrmServicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 306);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSave);
@@ -237,7 +297,7 @@ namespace TeatroSistema.View
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvServicios);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmServicios";
             this.Text = "FrmServicios";
             this.Load += new System.EventHandler(this.FrmServicios_Load);
@@ -266,5 +326,10 @@ namespace TeatroSistema.View
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
