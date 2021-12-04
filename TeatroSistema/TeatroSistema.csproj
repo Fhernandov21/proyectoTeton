@@ -207,6 +207,12 @@
     <Compile Include="View\FrmUsuarioV2.Designer.cs">
       <DependentUpon>FrmUsuarioV2.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmVentas.Designer.cs">
+      <DependentUpon>frmVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\LosHombresNoLloran.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmUsuarioV2.resx">
       <DependentUpon>FrmUsuarioV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmVentas.resx">
+      <DependentUpon>frmVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\LosHombresNoLloran.resx">
       <DependentUpon>LosHombresNoLloran.cs</DependentUpon>

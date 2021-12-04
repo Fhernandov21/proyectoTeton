@@ -52,7 +52,7 @@ namespace TeatroSistema.Data
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 //id
-                crearParametro(cmd, "@IDCliente", SqlDbType.Int, IDCliente, 50);
+                crearParametro(cmd, "@IdCliente", SqlDbType.Int, IDCliente, 50);
 
                 //ruc
                 crearParametro(cmd, "@NoRuc", SqlDbType.VarChar, NoRuc, 50);
@@ -63,23 +63,25 @@ namespace TeatroSistema.Data
                 //direccion
                 crearParametro(cmd, "@Direccion", SqlDbType.VarChar, Direccion, 100);
 
-                //tel
-                crearParametro(cmd, "@Telefono", SqlDbType.VarChar, Telefono, 50);
+                //nomrep
+                crearParametro(cmd, "@NombreRepresentante", SqlDbType.VarChar, NombreRepresentante, 50);
 
                 //cedrep
                 crearParametro(cmd, "@CedulaRepresentante", SqlDbType.VarChar, CedulaRepresentante, 50);
 
-                //nomrep
-                crearParametro(cmd, "@NombreRepresentante", SqlDbType.VarChar, NombreRepresentante, 50);
+                //tel
+                crearParametro(cmd, "@Telefono", SqlDbType.VarChar, Telefono, 50);
+              
+                //telrep
+                crearParametro(cmd, "@TelefonoRepresentante", SqlDbType.VarChar, TelefonoRep, 50);
 
+               
                 //direccionrep
-                crearParametro(cmd, "@DireccionRep", SqlDbType.VarChar, DireccionRep, 100);
+                crearParametro(cmd, "@DireccionRepresentante", SqlDbType.VarChar, DireccionRep, 100);
 
                 //fechanac
                 crearParametro(cmd, "@FechaNacimiento", SqlDbType.VarChar, FechaNacimiento, 50);
 
-                //telrep
-                crearParametro(cmd, "@TelefonoRep", SqlDbType.VarChar, TelefonoRep, 50);
 
 
                 rpta = cmd.ExecuteNonQuery() == 3 ? "OK" : "NotOK";
