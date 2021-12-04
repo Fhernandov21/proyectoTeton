@@ -65,7 +65,7 @@ namespace TeatroSistema.View
             this.Header.Controls.Add(this.btnExit);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header.Location = new System.Drawing.Point(0, 0);
-            this.Header.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Header.Margin = new System.Windows.Forms.Padding(4);
             this.Header.Name = "Header";
             this.Header.Size = new System.Drawing.Size(1525, 44);
             this.Header.TabIndex = 0;
@@ -78,7 +78,7 @@ namespace TeatroSistema.View
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExit.Location = new System.Drawing.Point(1480, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(45, 44);
             this.btnExit.TabIndex = 0;
@@ -100,7 +100,7 @@ namespace TeatroSistema.View
             this.panel1.Controls.Add(this.txtUsuario);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 44);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(543, 424);
             this.panel1.TabIndex = 1;
@@ -111,7 +111,7 @@ namespace TeatroSistema.View
             this.btnGuardar.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnGuardar.Location = new System.Drawing.Point(147, 324);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnGuardar.Size = new System.Drawing.Size(101, 37);
@@ -126,7 +126,7 @@ namespace TeatroSistema.View
             this.btnCancelar.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCancelar.Location = new System.Drawing.Point(357, 324);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(108, 37);
             this.btnCancelar.TabIndex = 20;
@@ -140,7 +140,7 @@ namespace TeatroSistema.View
             this.btnBuscar.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnBuscar.Location = new System.Drawing.Point(252, 324);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(101, 37);
             this.btnBuscar.TabIndex = 18;
@@ -186,7 +186,7 @@ namespace TeatroSistema.View
             "Recepcionista",
             "Reportes"});
             this.cmbRol.Location = new System.Drawing.Point(87, 238);
-            this.cmbRol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbRol.Margin = new System.Windows.Forms.Padding(4);
             this.cmbRol.Name = "cmbRol";
             this.cmbRol.Size = new System.Drawing.Size(413, 30);
             this.cmbRol.TabIndex = 8;
@@ -197,7 +197,7 @@ namespace TeatroSistema.View
             this.txtRepetirContraseña.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRepetirContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txtRepetirContraseña.Location = new System.Drawing.Point(33, 180);
-            this.txtRepetirContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRepetirContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtRepetirContraseña.Name = "txtRepetirContraseña";
             this.txtRepetirContraseña.Size = new System.Drawing.Size(467, 30);
             this.txtRepetirContraseña.TabIndex = 5;
@@ -211,7 +211,7 @@ namespace TeatroSistema.View
             this.btnNuevo.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.SystemColors.Control;
             this.btnNuevo.Location = new System.Drawing.Point(48, 324);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(91, 37);
             this.btnNuevo.TabIndex = 16;
@@ -225,7 +225,7 @@ namespace TeatroSistema.View
             this.txtContraseña.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txtContraseña.Location = new System.Drawing.Point(33, 128);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(467, 30);
             this.txtContraseña.TabIndex = 4;
@@ -239,7 +239,7 @@ namespace TeatroSistema.View
             this.txtUsuario.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.txtUsuario.Location = new System.Drawing.Point(33, 80);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(467, 30);
             this.txtUsuario.TabIndex = 3;
@@ -257,7 +257,7 @@ namespace TeatroSistema.View
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.ForeColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(543, 44);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(982, 424);
             this.panel2.TabIndex = 3;
@@ -277,7 +277,7 @@ namespace TeatroSistema.View
             // 
             this.panel3.Controls.Add(this.dtUsuario);
             this.panel3.Location = new System.Drawing.Point(16, 39);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(682, 298);
             this.panel3.TabIndex = 0;
@@ -304,7 +304,7 @@ namespace TeatroSistema.View
             this.dtUsuario.EnableHeadersVisualStyles = false;
             this.dtUsuario.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dtUsuario.Location = new System.Drawing.Point(0, 0);
-            this.dtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.dtUsuario.Name = "dtUsuario";
             this.dtUsuario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -326,6 +326,7 @@ namespace TeatroSistema.View
             this.dtUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtUsuario.Size = new System.Drawing.Size(682, 298);
             this.dtUsuario.TabIndex = 0;
+            this.dtUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtUsuario_CellContentClick);
             this.dtUsuario.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtUsuario_CellEnter);
             this.dtUsuario.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtUsuario_RowHeaderMouseClick);
             // 
@@ -336,7 +337,7 @@ namespace TeatroSistema.View
             this.btnModificar.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
             this.btnModificar.Location = new System.Drawing.Point(16, 356);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(117, 37);
             this.btnModificar.TabIndex = 17;
@@ -351,7 +352,7 @@ namespace TeatroSistema.View
             this.btnEstado.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstado.ForeColor = System.Drawing.Color.White;
             this.btnEstado.Location = new System.Drawing.Point(155, 356);
-            this.btnEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEstado.Margin = new System.Windows.Forms.Padding(4);
             this.btnEstado.Name = "btnEstado";
             this.btnEstado.Size = new System.Drawing.Size(132, 37);
             this.btnEstado.TabIndex = 19;
@@ -369,7 +370,7 @@ namespace TeatroSistema.View
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmUsuarioV2";
             this.Text = "FrmUsuarioV2";
             this.Load += new System.EventHandler(this.FrmUsuarioV2_Load);

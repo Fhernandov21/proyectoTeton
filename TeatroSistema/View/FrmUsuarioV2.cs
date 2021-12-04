@@ -349,6 +349,11 @@ namespace TeatroSistema.View
         {
             tablaACampos();
         }
+
+        private void dtUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
 }

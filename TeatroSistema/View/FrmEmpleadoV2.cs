@@ -17,7 +17,9 @@ namespace TeatroSistema.View
         
         public FrmEmpleadoV2()
         {
+            
             InitializeComponent();
+            
             dgvEmpleados.MultiSelect = false;
             dgvEmpleados.ReadOnly = true;
         }
@@ -42,6 +44,7 @@ namespace TeatroSistema.View
 
         private void FrmEmpleadoV2_Load(object sender, EventArgs e)
         {
+            dgvEmpleados.DataSource = CEmpleado.Mostrar_Empleados();
             cerrarCampos();
             cargarEmpleados();
             bloquaerBotonesForm();
@@ -180,6 +183,8 @@ namespace TeatroSistema.View
         
         private void abrirCampos()
         {
+            //AddEmpleado.Width = 429;
+            //this.Width = 1193;
             txtprimerNombre.Enabled = true;
             txtprimerApellido.Enabled = true;
             txtsegundoNombre.Enabled = true;
@@ -191,6 +196,8 @@ namespace TeatroSistema.View
         }
         private void cerrarCampos()
         {
+            //AddEmpleado.Width = 0;
+            //this.Width = 764;
             this.dgvEmpleados.DataSource = CEmpleado.Mostrar_Empleados();
             txtprimerNombre.Enabled = false;
             txtprimerApellido.Enabled = false;
@@ -222,7 +229,7 @@ namespace TeatroSistema.View
 
         private void dgvEmpleados_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            lblIdEmpleado.Text = "Id Empleado: " + dgvEmpleados.CurrentRow.Cells[0].Value.ToString();
+            
 
         }
 
@@ -255,6 +262,48 @@ namespace TeatroSistema.View
 
             fdet.CargarEmpleado(id);
             fdet.Show();
+        }
+
+        private void dgvEmpleados_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            
+            try
+            {
+                int.TryParse(dgvEmpleados.CurrentRow.Cells[0].Value.ToString(), out int id);
+                
+                
+                DataTable dt = new DataTable();
+                dt = CEmpleado.Mostrar_Detalle_Empleado(id);
+                
+                if (dt == null)
+                {
+                    return;
+                }
+                else
+                {
+                    lblIdEmpleado.Text = "Id Empleado: " + dt.Rows[0].ItemArray[0];
+                }
+            }
+            catch (IndexOutOfRangeException ex) 
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+            catch (System.NullReferenceException exo) 
+            {
+                return;
+            }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvEmpleados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,6 +21,18 @@ namespace TeatroSistema.View
         public LosHombresNoLloran()
         {
             InitializeComponent();
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private static extern void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(IntPtr hWindm, int wMsg, int wParam, int lParam);
+
+        private void ArrastrarVentana(object sender, MouseEventArgs args)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
         private void cargarCmbs()
         {
@@ -46,19 +59,7 @@ namespace TeatroSistema.View
             txtDuracion.Text = "HH:MM:SS";
             
         }
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximizar.Visible = false;
-            btnRestaurar.Visible = true; 
-        }
-
-        private void btnRestaurar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
-        }
+       
 
         private void LosHombresNoLloran_Load(object sender, EventArgs e)
         {
@@ -91,12 +92,7 @@ namespace TeatroSistema.View
             cmbSalon.SelectedIndex = 0;
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
-        }
+        
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
@@ -279,6 +275,16 @@ namespace TeatroSistema.View
         private void calendario_DateChanged(object sender, DateRangeEventArgs e)
         {
 
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Header_MouseDown(object sender, MouseEventArgs e)
+        {
+            ArrastrarVentana(sender, e);
         }
     }
 }
