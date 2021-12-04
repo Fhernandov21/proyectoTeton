@@ -180,6 +180,8 @@ namespace TeatroSistema.View
         
         private void abrirCampos()
         {
+            //AddEmpleado.Width = 429;
+            //this.Width = 1193;
             txtprimerNombre.Enabled = true;
             txtprimerApellido.Enabled = true;
             txtsegundoNombre.Enabled = true;
@@ -191,6 +193,8 @@ namespace TeatroSistema.View
         }
         private void cerrarCampos()
         {
+            //AddEmpleado.Width = 0;
+            //this.Width = 764;
             this.dgvEmpleados.DataSource = CEmpleado.Mostrar_Empleados();
             txtprimerNombre.Enabled = false;
             txtprimerApellido.Enabled = false;
@@ -222,9 +226,7 @@ namespace TeatroSistema.View
 
         private void dgvEmpleados_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            int.TryParse(dgvEmpleados.Rows[dgvEmpleados.CurrentRow.Index].Cells[0].Value.ToString(), out int id);
-            DataTable dt = CEmpleado.Mostrar_Detalle_Empleado(id);
-            lblIdEmpleado.Text = "Id Empleado: " + dt.Rows[0].ToString();
+            
 
         }
 
@@ -257,6 +259,24 @@ namespace TeatroSistema.View
 
             fdet.CargarEmpleado(id);
             fdet.Show();
+        }
+
+        private void dgvEmpleados_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = dgvEmpleados.CurrentRow.Index;
+            int.TryParse(dgvEmpleados.Rows[row].Cells[0].Value.ToString(), out int id);
+            Console.WriteLine(id);
+            DataGridView dgv = new DataGridView();
+            dgv.DataSource = CEmpleado.Mostrar_Detalle_Empleado(id);
+            Console.WriteLine(dgv.Rows);
+            if (dgv == null)
+            {
+                return;
+            }
+            else
+            {
+                lblIdEmpleado.Text = "Id Empleado: " + dgv.Rows[0].Cells[0].Value.ToString();
+            }
         }
     }
 }
