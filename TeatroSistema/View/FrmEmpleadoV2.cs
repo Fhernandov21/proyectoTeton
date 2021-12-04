@@ -222,7 +222,9 @@ namespace TeatroSistema.View
 
         private void dgvEmpleados_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            lblIdEmpleado.Text = "Id Empleado: " + dgvEmpleados.CurrentRow.Cells[0].Value.ToString();
+            int.TryParse(dgvEmpleados.Rows[dgvEmpleados.CurrentRow.Index].Cells[0].Value.ToString(), out int id);
+            DataTable dt = CEmpleado.Mostrar_Detalle_Empleado(id);
+            lblIdEmpleado.Text = "Id Empleado: " + dt.Rows[0].ToString();
 
         }
 

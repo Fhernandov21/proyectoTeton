@@ -30,6 +30,7 @@ namespace TeatroSistema.View.Subframes
         private void InitializeComponent()
         {
             this.btnFacturarEvento = new System.Windows.Forms.Button();
+            this.btnCancelarFactura = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnFacturarEvento
@@ -45,12 +46,25 @@ namespace TeatroSistema.View.Subframes
             this.btnFacturarEvento.UseVisualStyleBackColor = true;
             this.btnFacturarEvento.Click += new System.EventHandler(this.btnFacturarEvento_Click);
             // 
+            // btnCancelarFactura
+            // 
+            this.btnCancelarFactura.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCancelarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarFactura.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarFactura.Location = new System.Drawing.Point(117, 0);
+            this.btnCancelarFactura.Name = "btnCancelarFactura";
+            this.btnCancelarFactura.Size = new System.Drawing.Size(117, 33);
+            this.btnCancelarFactura.TabIndex = 2;
+            this.btnCancelarFactura.Text = "Cancelar Factura";
+            this.btnCancelarFactura.UseVisualStyleBackColor = true;
+            // 
             // FrmReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(800, 33);
+            this.Controls.Add(this.btnCancelarFactura);
             this.Controls.Add(this.btnFacturarEvento);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmReportes";
@@ -62,5 +76,6 @@ namespace TeatroSistema.View.Subframes
         #endregion
 
         private System.Windows.Forms.Button btnFacturarEvento;
+        private System.Windows.Forms.Button btnCancelarFactura;
     }
 }

@@ -30,6 +30,7 @@ namespace TeatroSistema.View.Subframes
         private void InitializeComponent()
         {
             this.btnProgramarEvento = new System.Windows.Forms.Button();
+            this.btnRealizarVenta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnProgramarEvento
@@ -45,12 +46,25 @@ namespace TeatroSistema.View.Subframes
             this.btnProgramarEvento.UseVisualStyleBackColor = true;
             this.btnProgramarEvento.Click += new System.EventHandler(this.btnProgramarEvento_Click);
             // 
+            // btnRealizarVenta
+            // 
+            this.btnRealizarVenta.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnRealizarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRealizarVenta.ForeColor = System.Drawing.Color.White;
+            this.btnRealizarVenta.Location = new System.Drawing.Point(139, 0);
+            this.btnRealizarVenta.Name = "btnRealizarVenta";
+            this.btnRealizarVenta.Size = new System.Drawing.Size(139, 33);
+            this.btnRealizarVenta.TabIndex = 2;
+            this.btnRealizarVenta.Text = "Realizar Venta";
+            this.btnRealizarVenta.UseVisualStyleBackColor = true;
+            // 
             // FrmOperaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(800, 33);
+            this.Controls.Add(this.btnRealizarVenta);
             this.Controls.Add(this.btnProgramarEvento);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmOperaciones";
@@ -62,5 +76,6 @@ namespace TeatroSistema.View.Subframes
         #endregion
 
         private System.Windows.Forms.Button btnProgramarEvento;
+        private System.Windows.Forms.Button btnRealizarVenta;
     }
 }
