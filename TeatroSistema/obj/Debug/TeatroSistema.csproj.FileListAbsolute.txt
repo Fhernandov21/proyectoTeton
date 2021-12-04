@@ -139,3 +139,5 @@ C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.FrmDetalleEmpleado.resources
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.FrmServiciosV2.resources
 >>>>>>> f0d00144f261771f76d0736cbe4ef7218041586b
+C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\obj\Debug\TeatroSistema.View.FrmDetalleEmpleado.resources
+C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\obj\Debug\TeatroSistema.View.FrmServiciosV2.resources

@@ -17,13 +17,16 @@ namespace TeatroSistema.View
         {
             InitializeComponent();
         }
-
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        private void cargarEventos()
         {
             string date = calendario.SelectionStart.Year + "-" +
                           calendario.SelectionStart.Month + "-" +
                           calendario.SelectionStart.Day;
             dgvEventosPendientes.DataSource = CEvento.Mostrar_EventosPendientes(date);
+        }
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            cargarEventos();
         }
 
         
