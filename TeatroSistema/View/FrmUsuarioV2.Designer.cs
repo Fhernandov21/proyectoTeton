@@ -306,6 +306,7 @@ namespace TeatroSistema.View
             this.dtUsuario.Location = new System.Drawing.Point(0, 0);
             this.dtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.dtUsuario.Name = "dtUsuario";
+            this.dtUsuario.ReadOnly = true;
             this.dtUsuario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(228)))));
