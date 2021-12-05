@@ -36,5 +36,11 @@ namespace TeatroSistema.View.Subframes
             SeleccionandoBoton((Button)sender);
             FrmMain.MostrarFrames(Content, new LosHombresNoLloran());
         }
+
+        private void btnRealizarVenta_Click(object sender, EventArgs e)
+        {
+            SeleccionandoBoton((Button)sender);
+            FrmMain.MostrarFrames(Content, new frmVentas());
+        }
     }
 }

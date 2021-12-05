@@ -248,10 +248,6 @@ namespace TeatroSistema.View
             lblCapacidadSalon.Text = "Capacidad: "+salones.Rows[cmbSalon.SelectedIndex]["CapacidadPersonas"].ToString()+" Personas";
         }
 
-        private void calendario_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
-        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {

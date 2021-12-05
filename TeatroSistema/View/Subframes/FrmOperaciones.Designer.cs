@@ -57,6 +57,7 @@ namespace TeatroSistema.View.Subframes
             this.btnRealizarVenta.TabIndex = 2;
             this.btnRealizarVenta.Text = "Realizar Venta";
             this.btnRealizarVenta.UseVisualStyleBackColor = true;
+            this.btnRealizarVenta.Click += new System.EventHandler(this.btnRealizarVenta_Click);
             // 
             // FrmOperaciones
             // 
