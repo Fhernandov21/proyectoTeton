@@ -81,6 +81,7 @@
     <Compile Include="Controller\CCliente.cs" />
     <Compile Include="Controller\CEmpleado.cs" />
     <Compile Include="Controller\CEvento.cs" />
+    <Compile Include="Controller\CRepresentante.cs" />
     <Compile Include="Controller\CSalon.cs" />
     <Compile Include="Controller\CServicio.cs" />
     <Compile Include="Controller\CUsuario.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Data\DCliente.cs" />
     <Compile Include="Data\DEmpleado.cs" />
     <Compile Include="Data\DEvento.cs" />
+    <Compile Include="Data\DRepresentante.cs" />
     <Compile Include="Data\DSalon.cs" />
     <Compile Include="Data\DServicio.cs" />
     <Compile Include="Data\DUsuario.cs" />
