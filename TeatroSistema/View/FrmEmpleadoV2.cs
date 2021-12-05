@@ -283,6 +283,17 @@ namespace TeatroSistema.View
                 else
                 {
                     lblIdEmpleado.Text = "Id Empleado: " + dt.Rows[0].ItemArray[0];
+                    txtprimerNombre.Text = dt.Rows[0].ItemArray[1].ToString();
+                    txtsegundoNombre.Text = dt.Rows[0].ItemArray[2].ToString();
+                    txtprimerApellido.Text = dt.Rows[0].ItemArray[3].ToString();
+                    txtsegundoApellido.Text = dt.Rows[0].ItemArray[4].ToString();
+                    txtCedula.Text = dt.Rows[0].ItemArray[5].ToString();
+                    txtDireccion.Text = dt.Rows[0].ItemArray[6].ToString();
+                    txtSalario.Text = dt.Rows[0].ItemArray[7].ToString();
+                    txtCodigo.Text = dt.Rows[0].ItemArray[8].ToString();
+
+
+
                 }
             }
             catch (IndexOutOfRangeException ex) 
