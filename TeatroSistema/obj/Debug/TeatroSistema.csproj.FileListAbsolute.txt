@@ -49,28 +49,6 @@ C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWAL
 C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\obj\Debug\TeatroSistema.pdb
 <<<<<<< HEAD
 =======
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\TeatroSistema.exe.config
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\TeatroSistema.exe
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\TeatroSistema.pdb
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.Azure.Management.ResourceManager.Fluent.dll
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.IdentityModel.Logging.dll
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.IdentityModel.Tokens.dll
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.Authentication.dll
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.dll
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.Rest.ClientRuntime.dll
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Newtonsoft.Json.dll
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.Azure.Management.ResourceManager.Fluent.xml
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.IdentityModel.Tokens.xml
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.Rest.ClientRuntime.xml
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.xml
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.Authentication.xml
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\bin\Debug\Newtonsoft.Json.xml
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\obj\Debug\TeatroSistema.csproj.CopyComplete
-<<<<<<< HEAD
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\obj\Debug\TeatroSistema.View.frmEventos.resources
-=======
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\bin\Debug\TeatroSistema.exe.config
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\bin\Debug\TeatroSistema.exe
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\bin\Debug\TeatroSistema.pdb
@@ -119,10 +97,8 @@ C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.FrmDetalleEmpleado.resources
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.FrmServiciosV2.resources
 >>>>>>> f0d00144f261771f76d0736cbe4ef7218041586b
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\obj\Debug\TeatroSistema.View.FrmDetalleEmpleado.resources
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\obj\Debug\TeatroSistema.View.FrmServiciosV2.resources
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.frmEventos.resources
-C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\obj\Debug\TeatroSistema.View.frmVentas.resources
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.frmVentas.resources
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.FrmEventosV2.resources
 >>>>>>> 9fa82d843e6eadb5e060c1a6f331a5a3a02675d7
+C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.FrmSalonesV2.resources

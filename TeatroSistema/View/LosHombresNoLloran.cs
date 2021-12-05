@@ -191,6 +191,7 @@ namespace TeatroSistema.View
         {
             saliendo(txtDuracion, "HH:MM:SS");
         }
+
         public void entrando(TextBox txt, string v)
         {
             if (txt.Text.Equals(v))
@@ -199,6 +200,7 @@ namespace TeatroSistema.View
                 txt.ForeColor = Color.Black;
             }
         }
+
         public void saliendo(TextBox txt, string v)
         {
             if (string.IsNullOrWhiteSpace(txt.Text))
@@ -228,33 +230,7 @@ namespace TeatroSistema.View
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            var verificacion = MessageBox.Show("¿Desea realizar la Programación del evento?", "Mensje del sistema",
-                MessageBoxButtons.YesNo);
-            if (verificacion == DialogResult.Yes)
-            {               
-                //generar evento y factura
-            }
-            else
-            {
-                return;
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var verificacion = MessageBox.Show("¿Desea cancelar la Programación del evento?", "Mensje del sistema",
-                MessageBoxButtons.YesNo);
-            if(verificacion == DialogResult.Yes)
-            {
-                this.Close();
-            }
-            else
-            {
-                return;
-            }
-        }
+       
         private void cargarItinerario()
         {
             string date = calendario.SelectionStart.Year + "-" +
@@ -285,6 +261,34 @@ namespace TeatroSistema.View
         private void Header_MouseDown(object sender, MouseEventArgs e)
         {
             ArrastrarVentana(sender, e);
+        }
+
+        private void btnCancelarProgramacion_Click(object sender, EventArgs e)
+        {
+            var verificacion = MessageBox.Show("¿Desea cancelar la Programación del evento?", "Mensje del sistema",
+                MessageBoxButtons.YesNo);
+            if (verificacion == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void btnProgramarEvento_Click(object sender, EventArgs e)
+        {
+            var verificacion = MessageBox.Show("¿Desea realizar la Programación del evento?", "Mensje del sistema",
+                MessageBoxButtons.YesNo);
+            if (verificacion == DialogResult.Yes)
+            {
+                //generar evento y factura
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

@@ -191,6 +191,12 @@
     <Compile Include="View\FrmProgramarEvento.Designer.cs">
       <DependentUpon>FrmProgramarEvento.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmSalonesV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmSalonesV2.Designer.cs">
+      <DependentUpon>FrmSalonesV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmServicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmProgramarEvento.resx">
       <DependentUpon>FrmProgramarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmSalonesV2.resx">
+      <DependentUpon>FrmSalonesV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmServicios.resx">
       <DependentUpon>FrmServicios.cs</DependentUpon>
