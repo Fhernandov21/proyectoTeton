@@ -16,11 +16,9 @@ namespace TeatroSistema
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
             Application.Run(new frmVentas()) ;
-=======
-            Application.Run(new frmAddPersona(1)) ;
->>>>>>> 9fa82d843e6eadb5e060c1a6f331a5a3a02675d7
+           
+
         }
     }
 }

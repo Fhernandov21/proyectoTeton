@@ -113,6 +113,12 @@
     <Compile Include="View\frmAddPersona.Designer.cs">
       <DependentUpon>frmAddPersona.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmAsientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmAsientos.Designer.cs">
+      <DependentUpon>frmAsientos.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmAddPersona.resx">
       <DependentUpon>frmAddPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmAsientos.resx">
+      <DependentUpon>frmAsientos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmCliente.resx">
       <DependentUpon>frmCliente.cs</DependentUpon>

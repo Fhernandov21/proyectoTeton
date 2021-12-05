@@ -41,7 +41,7 @@ namespace TeatroSistema.View
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtPorcentaje = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnVenta = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -50,9 +50,13 @@ namespace TeatroSistema.View
             this.btnAddBoleto = new System.Windows.Forms.Button();
             this.btnEliminarBoleto = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnVerAsientos = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsientos)).BeginInit();
@@ -109,7 +113,7 @@ namespace TeatroSistema.View
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 422);
+            this.label5.Location = new System.Drawing.Point(19, 458);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 17);
             this.label5.TabIndex = 1;
@@ -118,7 +122,7 @@ namespace TeatroSistema.View
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(5, 455);
+            this.label6.Location = new System.Drawing.Point(19, 430);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 17);
             this.label6.TabIndex = 1;
@@ -150,17 +154,18 @@ namespace TeatroSistema.View
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(74, 419);
+            this.txtNombre.Location = new System.Drawing.Point(87, 455);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(348, 22);
             this.txtNombre.TabIndex = 3;
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(74, 449);
+            this.txtCedula.Location = new System.Drawing.Point(87, 427);
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(348, 22);
+            this.txtCedula.Size = new System.Drawing.Size(191, 22);
             this.txtCedula.TabIndex = 3;
+            this.txtCedula.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCedula_KeyUp);
             // 
             // label10
             // 
@@ -171,14 +176,14 @@ namespace TeatroSistema.View
             this.label10.TabIndex = 1;
             this.label10.Text = "Porcentaje Teatro:";
             // 
-            // textBox6
+            // txtPorcentaje
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(346, 305);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(89, 22);
-            this.textBox6.TabIndex = 3;
-            this.textBox6.Text = "0.50";
+            this.txtPorcentaje.Enabled = false;
+            this.txtPorcentaje.Location = new System.Drawing.Point(346, 305);
+            this.txtPorcentaje.Name = "txtPorcentaje";
+            this.txtPorcentaje.Size = new System.Drawing.Size(89, 22);
+            this.txtPorcentaje.TabIndex = 3;
+            this.txtPorcentaje.Text = "0.50";
             // 
             // pictureBox1
             // 
@@ -196,6 +201,7 @@ namespace TeatroSistema.View
             this.btnVenta.TabIndex = 7;
             this.btnVenta.Text = "Realizar venta";
             this.btnVenta.UseVisualStyleBackColor = true;
+            this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
             // 
             // btnCancelar
             // 
@@ -208,18 +214,27 @@ namespace TeatroSistema.View
             // 
             // dgvAsientos
             // 
+            this.dgvAsientos.AllowUserToAddRows = false;
+            this.dgvAsientos.AllowUserToDeleteRows = false;
+            this.dgvAsientos.AllowUserToResizeColumns = false;
+            this.dgvAsientos.AllowUserToResizeRows = false;
+            this.dgvAsientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvAsientos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvAsientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAsientos.Location = new System.Drawing.Point(450, 298);
+            this.dgvAsientos.MultiSelect = false;
             this.dgvAsientos.Name = "dgvAsientos";
+            this.dgvAsientos.ReadOnly = true;
             this.dgvAsientos.RowHeadersWidth = 51;
             this.dgvAsientos.RowTemplate.Height = 24;
+            this.dgvAsientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAsientos.Size = new System.Drawing.Size(400, 143);
             this.dgvAsientos.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 277);
+            this.label3.Location = new System.Drawing.Point(5, 277);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 17);
             this.label3.TabIndex = 9;
@@ -243,6 +258,7 @@ namespace TeatroSistema.View
             this.btnEliminarBoleto.TabIndex = 7;
             this.btnEliminarBoleto.Text = "Eliminar Boleto";
             this.btnEliminarBoleto.UseVisualStyleBackColor = true;
+            this.btnEliminarBoleto.Click += new System.EventHandler(this.btnEliminarBoleto_Click);
             // 
             // label7
             // 
@@ -252,13 +268,6 @@ namespace TeatroSistema.View
             this.label7.Size = new System.Drawing.Size(138, 17);
             this.label7.TabIndex = 1;
             this.label7.Text = "Asientos ordenados:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(153, 277);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(69, 22);
-            this.textBox1.TabIndex = 10;
             // 
             // label8
             // 
@@ -276,15 +285,62 @@ namespace TeatroSistema.View
             this.textBox2.Size = new System.Drawing.Size(89, 22);
             this.textBox2.TabIndex = 10;
             // 
+            // btnVerAsientos
+            // 
+            this.btnVerAsientos.Location = new System.Drawing.Point(154, 272);
+            this.btnVerAsientos.Name = "btnVerAsientos";
+            this.btnVerAsientos.Size = new System.Drawing.Size(61, 27);
+            this.btnVerAsientos.TabIndex = 7;
+            this.btnVerAsientos.Text = "Ver...";
+            this.btnVerAsientos.UseVisualStyleBackColor = true;
+            this.btnVerAsientos.Click += new System.EventHandler(this.btnVerAsientos_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(284, 430);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(99, 17);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "ID Comprador:";
+            // 
+            // txtID
+            // 
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(389, 427);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(46, 22);
+            this.txtID.TabIndex = 10;
+            this.txtID.Text = "0";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(1037, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(79, 17);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Empleado: ";
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(1111, 9);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(16, 17);
+            this.lblID.TabIndex = 1;
+            this.lblID.Text = "0";
+            // 
             // frmVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1234, 497);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnVerAsientos);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnVenta);
             this.Controls.Add(this.btnEliminarBoleto);
@@ -295,8 +351,11 @@ namespace TeatroSistema.View
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtPorcentaje);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblID);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
@@ -330,7 +389,7 @@ namespace TeatroSistema.View
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtPorcentaje;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnVenta;
         private System.Windows.Forms.Button btnCancelar;
@@ -339,8 +398,12 @@ namespace TeatroSistema.View
         private System.Windows.Forms.Button btnAddBoleto;
         private System.Windows.Forms.Button btnEliminarBoleto;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnVerAsientos;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblID;
     }
 }
