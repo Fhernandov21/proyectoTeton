@@ -233,6 +233,12 @@
     <Compile Include="View\LosHombresNoLloran.designer.cs">
       <DependentUpon>LosHombresNoLloran.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Representantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Representantes.Designer.cs">
+      <DependentUpon>Representantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Subframes\FrmCatalogo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -331,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\LosHombresNoLloran.resx">
       <DependentUpon>LosHombresNoLloran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Representantes.resx">
+      <DependentUpon>Representantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Subframes\FrmCatalogo.resx">
       <DependentUpon>FrmCatalogo.cs</DependentUpon>
