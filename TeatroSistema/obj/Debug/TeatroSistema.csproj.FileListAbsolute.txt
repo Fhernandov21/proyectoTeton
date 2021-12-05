@@ -143,3 +143,4 @@ C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWAL
 C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\obj\Debug\TeatroSistema.View.FrmServiciosV2.resources
 C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.frmEventos.resources
 C:\Users\fherv\OneDrive\Escritorio\frutifantásticoProyectoBD\AMAIZINGPROYECTWALGERNOMIO\TeatroSistema\TeatroSistema\obj\Debug\TeatroSistema.View.frmVentas.resources
+C:\Users\rodri\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.frmVentas.resources
