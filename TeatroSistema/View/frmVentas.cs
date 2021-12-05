@@ -13,9 +13,12 @@ namespace TeatroSistema.View
 {
     public partial class frmVentas : Form
     {
-        public frmVentas()
+
+        DataTable Empleado = new DataTable();
+        public frmVentas(DataTable empleado)
         {
             InitializeComponent();
+            Empleado = empleado;
         }
 
         private void cargarEventos()
@@ -28,6 +31,7 @@ namespace TeatroSistema.View
             cargarEventos();
             dgvAsientos.Columns.Add("Asiento", "Asiento" );
             dgvAsientos.Columns.Add("Precio", "Precio");
+            lblID.Text = Empleado.Rows[0].ItemArray[1].ToString() + " " + Empleado.Rows[0].ItemArray[2].ToString();
         }
 
         private void btnAddBoleto_Click(object sender, EventArgs e)

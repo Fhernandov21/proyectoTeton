@@ -316,7 +316,7 @@ namespace TeatroSistema.View
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(1037, 9);
+            this.label12.Location = new System.Drawing.Point(873, 24);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(79, 17);
             this.label12.TabIndex = 1;
@@ -325,7 +325,7 @@ namespace TeatroSistema.View
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(1111, 9);
+            this.lblID.Location = new System.Drawing.Point(947, 24);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(16, 17);
             this.lblID.TabIndex = 1;

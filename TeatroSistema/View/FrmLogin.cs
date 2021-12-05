@@ -15,6 +15,7 @@ namespace TeatroSistema.View
 {
     public partial class FrmLogin : Form
     {
+        
         public FrmLogin()
         {
             InitializeComponent();
@@ -23,7 +24,11 @@ namespace TeatroSistema.View
 
         private void btnIniciarSecion_Click(object sender, EventArgs e)
         {
+            
             FrmMain f1 = new FrmMain();
+            f1.dataEmpleado = new DataTable();
+            f1.dataEmpleado = CUsuario.EmpleadoLoggeado(txtUsuario.Text, txtPass.Text);           
+
             DataTable dato;
             dato = CUsuario.Validar_Acceso(txtUsuario.Text, txtPass.Text);
             DataTable Rol;
@@ -33,6 +38,8 @@ namespace TeatroSistema.View
             {
                 
                 DiRol = Rol.Rows[0];
+                
+                
             }
             catch(IndexOutOfRangeException ex)
             {
@@ -62,6 +69,7 @@ namespace TeatroSistema.View
                 f1.Show();
                 this.Hide();
             }
+            
         }
         private void FrmLogin_Load(object sender, EventArgs e)
         {

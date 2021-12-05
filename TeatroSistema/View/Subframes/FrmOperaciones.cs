@@ -13,10 +13,12 @@ namespace TeatroSistema.View.Subframes
     public partial class FrmOperaciones : Form
     {
         Panel Content;
-        public FrmOperaciones(Panel content)
+        DataTable Empleado = new DataTable();
+        public FrmOperaciones(Panel content, DataTable empleado)
         {
             InitializeComponent();
             Content = content;
+            Empleado = empleado;
         }
 
         public void SeleccionandoBoton(Button sender)
@@ -34,13 +36,13 @@ namespace TeatroSistema.View.Subframes
         private void btnProgramarEvento_Click(object sender, EventArgs e)
         {
             SeleccionandoBoton((Button)sender);
-            FrmMain.MostrarFrames(Content, new LosHombresNoLloran());
+            FrmMain.MostrarFrames(Content, new LosHombresNoLloran(Empleado));
         }
 
         private void btnRealizarVenta_Click(object sender, EventArgs e)
         {
             SeleccionandoBoton((Button)sender);
-            FrmMain.MostrarFrames(Content, new frmVentas());
+            FrmMain.MostrarFrames(Content, new frmVentas(Empleado));
         }
     }
 }

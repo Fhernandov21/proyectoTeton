@@ -279,6 +279,38 @@ namespace TeatroSistema.Data
 
             return ans;
         }
+        
+
+
+        public DataTable EmpleadoLoggeado(string user, string pass)
+        {
+            DataTable dt = new DataTable();
+            SqlConnection con = new SqlConnection(Conexion.Cn);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("Empleado_Loggeado", con);
+                con.Open();
+                cmd.CommandType = CommandType.StoredProcedure;
+                DCliente.crearParametro(cmd, "@Usuario", SqlDbType.VarChar, user, 50);
+                DCliente.crearParametro(cmd, "@Contraseña", SqlDbType.VarChar, pass, 50);
+
+                SqlDataAdapter dat = new SqlDataAdapter(cmd);
+                
+                dat.Fill(dt);
+
+
+            }
+            catch(Exception ex)
+            {
+                dt.Rows.Add(new object[] { ex.Message });
+                //dt = null;
+            }
+
+
+            return dt;
+        }
+
 
     }
 }

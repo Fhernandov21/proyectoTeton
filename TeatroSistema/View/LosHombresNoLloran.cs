@@ -17,10 +17,12 @@ namespace TeatroSistema.View
     {
         float totalServicios = 0;
         DataTable serviciosReservados = new DataTable();
+        DataTable Empleado = new DataTable();
 
-        public LosHombresNoLloran()
+        public LosHombresNoLloran(DataTable empleado)
         {
             InitializeComponent();
+            this.Empleado = empleado;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -64,6 +66,9 @@ namespace TeatroSistema.View
         private void LosHombresNoLloran_Load(object sender, EventArgs e)
         {
             cargarItinerario();
+            txtIDEmpleado.Text = Empleado.Rows[0].ItemArray[0].ToString();
+            textBox2.Text = Empleado.Rows[0].ItemArray[1].ToString();
+            txtApellido.Text = Empleado.Rows[0].ItemArray[2].ToString();
             calendario.MaxSelectionCount = 1;
             cargarCmbs();
             DataTable dtServicios = CServicio.Mostrar_Servicios();

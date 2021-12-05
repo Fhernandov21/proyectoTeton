@@ -17,6 +17,7 @@ namespace TeatroSistema.View
     public partial class FrmMain : Form
     {
         bool maxpress = false;
+        public DataTable dataEmpleado = new DataTable();
         public FrmMain()
         {
             InitializeComponent();
@@ -149,7 +150,7 @@ namespace TeatroSistema.View
         {
             SeleccionandoBoton((Button)sender);
             SeguirBoton((Button)sender);
-            MostrarFrames(this.Menu, new FrmOperaciones(this.Content));
+            MostrarFrames(this.Menu, new FrmOperaciones(this.Content, dataEmpleado));
         }
 
         private void FrmMain_Load(object sender, EventArgs e)

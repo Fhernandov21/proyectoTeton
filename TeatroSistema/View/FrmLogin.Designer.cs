@@ -54,7 +54,7 @@ namespace TeatroSistema.View
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(359, 453);
             this.panel1.TabIndex = 0;
@@ -76,7 +76,7 @@ namespace TeatroSistema.View
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(16, 63);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(333, 241);
             this.pictureBox1.TabIndex = 0;
@@ -88,7 +88,7 @@ namespace TeatroSistema.View
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.Azure;
             this.txtUsuario.Location = new System.Drawing.Point(409, 108);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(545, 30);
             this.txtUsuario.TabIndex = 1;
@@ -102,7 +102,7 @@ namespace TeatroSistema.View
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.Azure;
             this.txtPass.Location = new System.Drawing.Point(409, 182);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(545, 30);
             this.txtPass.TabIndex = 2;
@@ -132,7 +132,7 @@ namespace TeatroSistema.View
             this.btnIniciarSecion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSecion.ForeColor = System.Drawing.Color.Silver;
             this.btnIniciarSecion.Location = new System.Drawing.Point(411, 308);
-            this.btnIniciarSecion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIniciarSecion.Margin = new System.Windows.Forms.Padding(4);
             this.btnIniciarSecion.Name = "btnIniciarSecion";
             this.btnIniciarSecion.Size = new System.Drawing.Size(535, 49);
             this.btnIniciarSecion.TabIndex = 5;
@@ -167,7 +167,7 @@ namespace TeatroSistema.View
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(1008, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 31);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -179,7 +179,7 @@ namespace TeatroSistema.View
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(975, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 31);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -203,7 +203,7 @@ namespace TeatroSistema.View
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmLogin";
             this.Opacity = 0.9D;
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -223,8 +223,6 @@ namespace TeatroSistema.View
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtPass;
         //private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         //private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         //private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
@@ -236,5 +234,7 @@ namespace TeatroSistema.View
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.TextBox txtUsuario;
+        public System.Windows.Forms.TextBox txtPass;
     }
 }

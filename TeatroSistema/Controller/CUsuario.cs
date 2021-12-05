@@ -41,6 +41,11 @@ namespace TeatroSistema.Controller
             return new DUsuario().Cambiar_EstadoUsuario(IdUsuario);
         }
 
+
+        public static DataTable EmpleadoLoggeado(string user, string pass)
+        {
+            return new DUsuario().EmpleadoLoggeado(user, pass);
+        }
         
     }
 }
