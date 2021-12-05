@@ -30,9 +30,9 @@ namespace TeatroSistema.View
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEventosV2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Header = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,9 +42,12 @@ namespace TeatroSistema.View
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnFacturar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.pbImagen = new System.Windows.Forms.PictureBox();
             this.Header.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventosPendientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // Header
@@ -75,7 +78,7 @@ namespace TeatroSistema.View
             this.panel1.Controls.Add(this.dgvEventosPendientes);
             this.panel1.Location = new System.Drawing.Point(30, 90);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(452, 249);
+            this.panel1.Size = new System.Drawing.Size(452, 331);
             this.panel1.TabIndex = 3;
             // 
             // dgvEventosPendientes
@@ -83,14 +86,14 @@ namespace TeatroSistema.View
             this.dgvEventosPendientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(228)))));
             this.dgvEventosPendientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvEventosPendientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEventosPendientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEventosPendientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvEventosPendientes.ColumnHeadersHeight = 30;
             this.dgvEventosPendientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvEventosPendientes.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -99,31 +102,31 @@ namespace TeatroSistema.View
             this.dgvEventosPendientes.Location = new System.Drawing.Point(0, 0);
             this.dgvEventosPendientes.Name = "dgvEventosPendientes";
             this.dgvEventosPendientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(228)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEventosPendientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(228)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEventosPendientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvEventosPendientes.RowHeadersVisible = false;
             this.dgvEventosPendientes.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(228)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvEventosPendientes.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(228)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEventosPendientes.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvEventosPendientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEventosPendientes.Size = new System.Drawing.Size(452, 249);
+            this.dgvEventosPendientes.Size = new System.Drawing.Size(452, 331);
             this.dgvEventosPendientes.TabIndex = 2;
             // 
             // calendario
             // 
             this.calendario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(228)))));
             this.calendario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.calendario.Location = new System.Drawing.Point(508, 118);
+            this.calendario.Location = new System.Drawing.Point(503, 259);
             this.calendario.Margin = new System.Windows.Forms.Padding(7);
             this.calendario.Name = "calendario";
             this.calendario.TabIndex = 4;
@@ -134,7 +137,7 @@ namespace TeatroSistema.View
             this.btnPagarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPagarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPagarFactura.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnPagarFactura.Location = new System.Drawing.Point(224, 362);
+            this.btnPagarFactura.Location = new System.Drawing.Point(224, 437);
             this.btnPagarFactura.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagarFactura.Name = "btnPagarFactura";
             this.btnPagarFactura.Size = new System.Drawing.Size(93, 38);
@@ -148,7 +151,7 @@ namespace TeatroSistema.View
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(30, 362);
+            this.btnCancelar.Location = new System.Drawing.Point(30, 437);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(93, 38);
@@ -162,7 +165,7 @@ namespace TeatroSistema.View
             this.btnFacturar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacturar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFacturar.ForeColor = System.Drawing.Color.White;
-            this.btnFacturar.Location = new System.Drawing.Point(127, 362);
+            this.btnFacturar.Location = new System.Drawing.Point(127, 437);
             this.btnFacturar.Margin = new System.Windows.Forms.Padding(2);
             this.btnFacturar.Name = "btnFacturar";
             this.btnFacturar.Size = new System.Drawing.Size(93, 38);
@@ -183,12 +186,35 @@ namespace TeatroSistema.View
             this.label1.TabIndex = 24;
             this.label1.Text = "Eventos Pendientes";
             // 
+            // btnActualizar
+            // 
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnActualizar.Location = new System.Drawing.Point(321, 437);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(93, 38);
+            this.btnActualizar.TabIndex = 25;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            // 
+            // pbImagen
+            // 
+            this.pbImagen.Location = new System.Drawing.Point(503, 90);
+            this.pbImagen.Name = "pbImagen";
+            this.pbImagen.Size = new System.Drawing.Size(248, 159);
+            this.pbImagen.TabIndex = 26;
+            this.pbImagen.TabStop = false;
+            // 
             // FrmEventosV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 519);
+            this.Controls.Add(this.pbImagen);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnPagarFactura);
             this.Controls.Add(this.btnFacturar);
@@ -202,6 +228,7 @@ namespace TeatroSistema.View
             this.Header.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventosPendientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,5 +245,7 @@ namespace TeatroSistema.View
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnFacturar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.PictureBox pbImagen;
     }
 }

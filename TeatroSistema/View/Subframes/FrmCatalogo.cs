@@ -44,7 +44,7 @@ namespace TeatroSistema.View.Subframes
         private void button1_Click(object sender, EventArgs e)
         {
             SeleccionandoBoton((Button)sender);
-            FrmMain.MostrarFrames(Content, new CatSalones());
+            FrmMain.MostrarFrames(Content, new FrmSalonesV2());
 
         }
 
@@ -73,7 +73,7 @@ namespace TeatroSistema.View.Subframes
         private void btnEvento_Click(object sender, EventArgs e)
         {
             SeleccionandoBoton((Button)sender);
-            FrmMain.MostrarFrames(Content, new frmEventos());
+            FrmMain.MostrarFrames(Content, new FrmEventosV2());
         }
     }
 }

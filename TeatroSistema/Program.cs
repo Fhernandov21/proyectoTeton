@@ -11,14 +11,20 @@ namespace TeatroSistema
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
-        [STAThread]
+ 
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new frmVentas()) ;
            
 
         }
+=======
+
+            Application.Run(new FrmMain()) ;
+        }  
+>>>>>>> 01e2153af69c4160d2cdba5687f23831354ea937
     }
 }

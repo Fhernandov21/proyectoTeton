@@ -81,6 +81,7 @@
     <Compile Include="Controller\CCliente.cs" />
     <Compile Include="Controller\CEmpleado.cs" />
     <Compile Include="Controller\CEvento.cs" />
+    <Compile Include="Controller\CRepresentante.cs" />
     <Compile Include="Controller\CSalon.cs" />
     <Compile Include="Controller\CServicio.cs" />
     <Compile Include="Controller\CUsuario.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Data\DCliente.cs" />
     <Compile Include="Data\DEmpleado.cs" />
     <Compile Include="Data\DEvento.cs" />
+    <Compile Include="Data\DRepresentante.cs" />
     <Compile Include="Data\DSalon.cs" />
     <Compile Include="Data\DServicio.cs" />
     <Compile Include="Data\DUsuario.cs" />
@@ -197,6 +199,12 @@
     <Compile Include="View\FrmProgramarEvento.Designer.cs">
       <DependentUpon>FrmProgramarEvento.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmSalonesV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmSalonesV2.Designer.cs">
+      <DependentUpon>FrmSalonesV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmServicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +240,12 @@
     </Compile>
     <Compile Include="View\LosHombresNoLloran.designer.cs">
       <DependentUpon>LosHombresNoLloran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Representantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Representantes.Designer.cs">
+      <DependentUpon>Representantes.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Subframes\FrmCatalogo.cs">
       <SubType>Form</SubType>
@@ -314,6 +328,9 @@
     <EmbeddedResource Include="View\FrmProgramarEvento.resx">
       <DependentUpon>FrmProgramarEvento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmSalonesV2.resx">
+      <DependentUpon>FrmSalonesV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FrmServicios.resx">
       <DependentUpon>FrmServicios.cs</DependentUpon>
     </EmbeddedResource>
@@ -331,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\LosHombresNoLloran.resx">
       <DependentUpon>LosHombresNoLloran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Representantes.resx">
+      <DependentUpon>Representantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Subframes\FrmCatalogo.resx">
       <DependentUpon>FrmCatalogo.cs</DependentUpon>
