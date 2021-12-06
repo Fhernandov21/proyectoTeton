@@ -101,15 +101,15 @@ namespace TeatroSistema.View
             //MUESTRA CLIENTES JURIDICOS
         private void btnEntidad_Click(object sender, EventArgs e)
         {
-            FrmAddEntidad fre = new FrmAddEntidad(this.dgvClientes.Rows.Count);
-            fre.enviarEntidadEvent += new FrmAddEntidad.enviarEntidad(recibirEntidad);
+            FrmAddEntidadV2 fre = new FrmAddEntidadV2(this.dgvClientes.Rows.Count);
+            fre.enviarEntidadEvent += new FrmAddEntidadV2.enviarEntidad(recibirEntidad);
             fre.Show();
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            frmAddPersona addPersona = new frmAddPersona(this.dgvClientes.Rows.Count);
-            addPersona.enviarPersonaEvent += new frmAddPersona.enviarPersona(recibirPersona);
+            FrmAddPersonaV2 addPersona = new FrmAddPersonaV2(this.dgvClientes.Rows.Count);
+            addPersona.enviarPersonaEvent += new FrmAddPersonaV2.enviarPersona(recibirPersona);
             addPersona.Show();
         }
 

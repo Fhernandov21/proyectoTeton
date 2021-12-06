@@ -109,11 +109,23 @@
     <Compile Include="View\FrmAddEntidad.Designer.cs">
       <DependentUpon>FrmAddEntidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmAddEntidadV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAddEntidadV2.Designer.cs">
+      <DependentUpon>FrmAddEntidadV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmAddPersona.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\frmAddPersona.Designer.cs">
       <DependentUpon>frmAddPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAddPersonaV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAddPersonaV2.Designer.cs">
+      <DependentUpon>FrmAddPersonaV2.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frmAsientos.cs">
       <SubType>Form</SubType>
@@ -295,8 +307,14 @@
     <EmbeddedResource Include="View\FrmAddEntidad.resx">
       <DependentUpon>FrmAddEntidad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAddEntidadV2.resx">
+      <DependentUpon>FrmAddEntidadV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmAddPersona.resx">
       <DependentUpon>frmAddPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAddPersonaV2.resx">
+      <DependentUpon>FrmAddPersonaV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmAsientos.resx">
       <DependentUpon>frmAsientos.cs</DependentUpon>
