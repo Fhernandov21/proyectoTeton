@@ -69,6 +69,7 @@ namespace TeatroSistema.View
             this.Header.Name = "Header";
             this.Header.Size = new System.Drawing.Size(831, 36);
             this.Header.TabIndex = 3;
+            this.Header.Paint += new System.Windows.Forms.PaintEventHandler(this.Header_Paint);
             this.Header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Header_MouseDown);
             // 
             // btnExit

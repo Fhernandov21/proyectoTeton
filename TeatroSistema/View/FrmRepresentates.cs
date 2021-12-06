@@ -106,5 +106,10 @@ namespace TeatroSistema.View
             txtNombreRepre.Text = null;
             txtTelefono.Text = null;
         }
+
+        private void Header_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

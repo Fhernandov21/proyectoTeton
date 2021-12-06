@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Controller\CCliente.cs" />
     <Compile Include="Controller\CEmpleado.cs" />
+    <Compile Include="Controller\CEmpresasMantenimiento.cs" />
     <Compile Include="Controller\CEvento.cs" />
     <Compile Include="Controller\CRepresentante.cs" />
     <Compile Include="Controller\CSalon.cs" />
@@ -87,8 +88,10 @@
     <Compile Include="Controller\CUsuario.cs" />
     <Compile Include="Controller\CVenta.cs" />
     <Compile Include="Data\Conexion.cs" />
+    <Compile Include="Data\Datatable.cs" />
     <Compile Include="Data\DCliente.cs" />
     <Compile Include="Data\DEmpleado.cs" />
+    <Compile Include="Data\DEmpresasMantenimiento.cs" />
     <Compile Include="Data\DEvento.cs" />
     <Compile Include="Data\DRepresentante.cs" />
     <Compile Include="Data\DSalon.cs" />
@@ -162,6 +165,12 @@
     </Compile>
     <Compile Include="View\FrmEmpleadoV2.Designer.cs">
       <DependentUpon>FrmEmpleadoV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmEmpresasMan .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmEmpresasMan .Designer.cs">
+      <DependentUpon>FrmEmpresasMan .cs</DependentUpon>
     </Compile>
     <Compile Include="View\frmEventos.cs">
       <SubType>Form</SubType>
@@ -333,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmEmpleadoV2.resx">
       <DependentUpon>FrmEmpleadoV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmEmpresasMan .resx">
+      <DependentUpon>FrmEmpresasMan .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmEventos.resx">
       <DependentUpon>frmEventos.cs</DependentUpon>

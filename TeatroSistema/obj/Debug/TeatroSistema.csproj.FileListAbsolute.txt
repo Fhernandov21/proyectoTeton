@@ -215,3 +215,6 @@ C:\Users\fherv\Source\Repos\proyectoTeton\TeatroSistema\bin\Debug\Microsoft.Rest
 C:\Users\fherv\Source\Repos\proyectoTeton\TeatroSistema\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.Authentication.xml
 C:\Users\fherv\Source\Repos\proyectoTeton\TeatroSistema\bin\Debug\Newtonsoft.Json.xml
 C:\Users\fherv\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.csproj.CopyComplete
+C:\Users\MSI\source\repos\Fhernandov21\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.FrmAddEntidadV2.resources
+C:\Users\MSI\source\repos\Fhernandov21\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.FrmAddPersonaV2.resources
+C:\Users\MSI\source\repos\Fhernandov21\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.FrmEmpresasMan.resources
