@@ -62,5 +62,10 @@ namespace TeatroSistema.View
             txtCedula.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             dateTimeFecha.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

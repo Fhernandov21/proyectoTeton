@@ -41,8 +41,7 @@ namespace TeatroSistema.View
 
         private void FrmClienteV2_Load(object sender, EventArgs e)
         {
-            MenuBar.Width = 0;
-            panelTable.Width = 914;
+            
             dt = CCliente.Mostrar_Clientes();
             this.dgvClientes.DataSource = dt;
             dgvClientes.MultiSelect = false;
