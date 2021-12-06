@@ -96,5 +96,36 @@ namespace TeatroSistema.Data
             }
             return rpta;
         }
+        public string EliminarRepre (string Cedula)
+        {
+            string rpta = "a";
+            SqlConnection con = new SqlConnection(); 
+            try
+            {
+                con.ConnectionString = Conexion.Cn;
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "EliminarRepre";
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter parCedula = new SqlParameter();
+                parCedula.ParameterName = "Cedula";
+                parCedula.SqlDbType = SqlDbType.VarChar;
+                parCedula.Size = 50;
+                parCedula.Value = Cedula;
+                cmd.Parameters.Add(parCedula);
+
+                rpta = cmd.ExecuteNonQuery() == 1 ? "Ok" : "NotOk"; 
+
+
+            }catch(Exception ex)
+            {
+                rpta = ex.Message;
+            }
+            return rpta;
+        }
     }
+
 }

@@ -54,6 +54,7 @@ namespace TeatroSistema.View
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.Header.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRepresentantes)).BeginInit();
@@ -327,12 +328,26 @@ namespace TeatroSistema.View
             this.dateTimeFecha.Size = new System.Drawing.Size(197, 25);
             this.dateTimeFecha.TabIndex = 56;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiar.Location = new System.Drawing.Point(506, 372);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(119, 30);
+            this.btnLimpiar.TabIndex = 57;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // FrmRepresentates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(100)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(831, 431);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.dateTimeFecha);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnEliminar);
@@ -387,5 +402,6 @@ namespace TeatroSistema.View
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimeFecha;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

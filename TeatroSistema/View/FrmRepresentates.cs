@@ -61,6 +61,11 @@ namespace TeatroSistema.View
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            string Cedula;
+            Cedula = dgvRepresentantes.CurrentRow.Cells[4].Value.ToString();
+            CRepresentante.EliminarRepresentante(Cedula);
+            CargarReprese(); 
+
 
         }
 
@@ -75,6 +80,7 @@ namespace TeatroSistema.View
             fecha = dateTimeFecha.Text;
             CRepresentante.CrearRepresentante(NombreRepre, NombreEnti, Direccion, telefono, CedulaRepresentante, fecha);
             Console.WriteLine("Se Creo el representante");
+            CargarReprese(); 
         }
 
         private void FrmRepresentates_Load(object sender, EventArgs e)
@@ -90,6 +96,15 @@ namespace TeatroSistema.View
             txtTelefono.Text = dgvRepresentantes.CurrentRow.Cells[3].Value.ToString();
             txtCedula.Text = dgvRepresentantes.CurrentRow.Cells[4].Value.ToString();
             dateTimeFecha.Text = dgvRepresentantes.CurrentRow.Cells[5].Value.ToString();
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtCedula.Text = null;
+            txtDireccion.Text = null;
+            txtNombreEntidad.Text = null;
+            txtNombreRepre.Text = null;
+            txtTelefono.Text = null;
         }
     }
 }

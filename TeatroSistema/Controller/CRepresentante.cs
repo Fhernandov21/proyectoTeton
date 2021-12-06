@@ -26,5 +26,10 @@ namespace TeatroSistema.Controller
         {
             return new DRepresentante().ActualizarRepre(NombreRepre, NombreEnti, Direccion, telefono, CedulaRepresentante, fecha); 
         }
+
+        public static string EliminarRepresentante(string Cedula)
+        {
+            return new DRepresentante().EliminarRepre(Cedula);
+        }
     }
 }
