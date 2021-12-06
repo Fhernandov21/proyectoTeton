@@ -14,12 +14,20 @@ namespace TeatroSistema.View
 {
     public partial class FrmEmpleadoV2 : Form
     {
-        
+        public void EsconderBotones()
+        {
+            btnActualizar.Hide();
+            btnCancelar.Hide();
+            btnDetalles.Hide();
+            btnEstado.Hide();
+            btnNuevo.Hide();
+            btnSave.Hide();
+        }
         public FrmEmpleadoV2()
         {
             
             InitializeComponent();
-            
+            btnSeleccionar.Hide();
             dgvEmpleados.MultiSelect = false;
             dgvEmpleados.ReadOnly = true;
         }
@@ -315,6 +323,11 @@ namespace TeatroSistema.View
         private void dgvEmpleados_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnSeleccionar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

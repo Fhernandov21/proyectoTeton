@@ -67,8 +67,8 @@ namespace TeatroSistema.View
         {
             cargarItinerario();
             txtIDEmpleado.Text = Empleado.Rows[0].ItemArray[0].ToString();
-            textBox2.Text = Empleado.Rows[0].ItemArray[1].ToString();
-            txtApellido.Text = Empleado.Rows[0].ItemArray[2].ToString();
+            txtNameEmpleado.Text = Empleado.Rows[0].ItemArray[1].ToString();
+            txtApellidoEmpleado.Text = Empleado.Rows[0].ItemArray[2].ToString();
             calendario.MaxSelectionCount = 1;
             cargarCmbs();
             DataTable dtServicios = CServicio.Mostrar_Servicios();
@@ -138,7 +138,15 @@ namespace TeatroSistema.View
 
         private void btnSeleccionarEmpleado_Click(object sender, EventArgs e)
         {
-            //necesito el catálogo de empleados
+            FrmEmpleadoV2 fe = new FrmEmpleadoV2();
+            fe.btnSeleccionar.Show();
+            fe.EsconderBotones();
+            fe.ShowDialog();
+            DataGridViewRow dtRow = fe.dgvEmpleados.SelectedRows[0];
+            txtIDEmpleado.Text = dtRow.Cells[0].Value.ToString() ;
+            txtNameEmpleado.Text = fe.txtprimerNombre.Text;
+            txtApellidoEmpleado.Text = fe.txtprimerApellido.Text;
+
         }
         private void btnAddService_Click(object sender, EventArgs e)
         {
@@ -295,6 +303,11 @@ namespace TeatroSistema.View
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void calendario_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            cargarItinerario();
         }
     }
 }
