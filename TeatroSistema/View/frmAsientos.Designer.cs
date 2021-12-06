@@ -51,7 +51,7 @@ namespace TeatroSistema.View
             this.dgvAsientosDisponibles.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(173)))), ((int)(((byte)(228)))));
             this.dgvAsientosDisponibles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAsientosDisponibles.Location = new System.Drawing.Point(9, 67);
-            this.dgvAsientosDisponibles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvAsientosDisponibles.Margin = new System.Windows.Forms.Padding(2);
             this.dgvAsientosDisponibles.MultiSelect = false;
             this.dgvAsientosDisponibles.Name = "dgvAsientosDisponibles";
             this.dgvAsientosDisponibles.ReadOnly = true;
@@ -79,7 +79,7 @@ namespace TeatroSistema.View
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.Location = new System.Drawing.Point(9, 475);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(224, 28);
             this.btnCancelar.TabIndex = 2;
@@ -93,7 +93,7 @@ namespace TeatroSistema.View
             this.btnSeleccionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnSeleccionar.ForeColor = System.Drawing.Color.White;
             this.btnSeleccionar.Location = new System.Drawing.Point(231, 475);
-            this.btnSeleccionar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSeleccionar.Margin = new System.Windows.Forms.Padding(2);
             this.btnSeleccionar.Name = "btnSeleccionar";
             this.btnSeleccionar.Size = new System.Drawing.Size(224, 28);
             this.btnSeleccionar.TabIndex = 2;
@@ -137,7 +137,7 @@ namespace TeatroSistema.View
             this.Controls.Add(this.lblSalon);
             this.Controls.Add(this.dgvAsientosDisponibles);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAsientos";
             this.Text = "frmAsientos";
             this.Load += new System.EventHandler(this.frmAsientos_Load);
