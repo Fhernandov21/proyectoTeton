@@ -111,7 +111,7 @@ namespace TeatroSistema.View
             this.btnSelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelect.ForeColor = System.Drawing.Color.White;
             this.btnSelect.Location = new System.Drawing.Point(438, 14);
-            this.btnSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelect.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(172, 27);
             this.btnSelect.TabIndex = 8;
@@ -199,7 +199,7 @@ namespace TeatroSistema.View
             this.btnEntidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntidad.ForeColor = System.Drawing.Color.White;
             this.btnEntidad.Location = new System.Drawing.Point(21, 139);
-            this.btnEntidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEntidad.Margin = new System.Windows.Forms.Padding(2);
             this.btnEntidad.Name = "btnEntidad";
             this.btnEntidad.Size = new System.Drawing.Size(172, 48);
             this.btnEntidad.TabIndex = 10;
@@ -213,7 +213,7 @@ namespace TeatroSistema.View
             this.btnDetalles.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDetalles.ForeColor = System.Drawing.Color.White;
             this.btnDetalles.Location = new System.Drawing.Point(21, 207);
-            this.btnDetalles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDetalles.Margin = new System.Windows.Forms.Padding(2);
             this.btnDetalles.Name = "btnDetalles";
             this.btnDetalles.Size = new System.Drawing.Size(172, 48);
             this.btnDetalles.TabIndex = 8;
@@ -227,7 +227,7 @@ namespace TeatroSistema.View
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
             this.btnNuevo.Location = new System.Drawing.Point(21, 72);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(172, 48);
             this.btnNuevo.TabIndex = 9;
