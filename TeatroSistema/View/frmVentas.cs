@@ -42,7 +42,7 @@ namespace TeatroSistema.View
 
         private void dgvEventos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtPrecio.Text = dgvEventos.SelectedRows[0].Cells[0].Value.ToString();
+            txtPrecio.Text = dgvEventos.SelectedRows[0].Cells[6].Value.ToString();
             string imgEventoaux = dgvEventos.Rows[e.RowIndex].Cells[1].Value.ToString();
             //pictureBox1.Image = Image.FromFile(@"C:\Users\fherv\OneDrive\Escritorio\otra vex\TeatroSistema\Imagen\" +
             //    imgEventoaux.Replace(" ", string.Empty) + ".jfif"
@@ -51,7 +51,7 @@ namespace TeatroSistema.View
 
         private void dgvEventos_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            txtPrecio.Text = dgvEventos.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtPrecio.Text = dgvEventos.Rows[e.RowIndex].Cells[6].Value.ToString();
             dgvAsientos.Rows.Clear();
             string imgEventoaux = dgvEventos.Rows[e.RowIndex].Cells[1].Value.ToString();
             //pictureBox1.Image = Image.FromFile(@"C:\Users\fherv\OneDrive\Escritorio\otra vex\TeatroSistema\Imagen\" +
