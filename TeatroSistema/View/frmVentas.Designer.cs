@@ -47,16 +47,15 @@ namespace TeatroSistema.View
             this.btnCancelar = new System.Windows.Forms.Button();
             this.dgvAsientos = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnAddBoleto = new System.Windows.Forms.Button();
             this.btnEliminarBoleto = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnVerAsientos = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
+            this.btnNuevoCliente = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsientos)).BeginInit();
@@ -104,7 +103,7 @@ namespace TeatroSistema.View
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(163, 391);
+            this.label4.Location = new System.Drawing.Point(163, 351);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 17);
             this.label4.TabIndex = 1;
@@ -113,7 +112,7 @@ namespace TeatroSistema.View
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 458);
+            this.label5.Location = new System.Drawing.Point(19, 418);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 17);
             this.label5.TabIndex = 1;
@@ -122,7 +121,7 @@ namespace TeatroSistema.View
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 430);
+            this.label6.Location = new System.Drawing.Point(19, 390);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 17);
             this.label6.TabIndex = 1;
@@ -154,14 +153,15 @@ namespace TeatroSistema.View
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(87, 455);
+            this.txtNombre.Enabled = false;
+            this.txtNombre.Location = new System.Drawing.Point(87, 415);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(348, 22);
             this.txtNombre.TabIndex = 3;
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(87, 427);
+            this.txtCedula.Location = new System.Drawing.Point(87, 387);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(191, 22);
             this.txtCedula.TabIndex = 3;
@@ -179,9 +179,9 @@ namespace TeatroSistema.View
             // txtPorcentaje
             // 
             this.txtPorcentaje.Enabled = false;
-            this.txtPorcentaje.Location = new System.Drawing.Point(346, 305);
+            this.txtPorcentaje.Location = new System.Drawing.Point(353, 305);
             this.txtPorcentaje.Name = "txtPorcentaje";
-            this.txtPorcentaje.Size = new System.Drawing.Size(89, 22);
+            this.txtPorcentaje.Size = new System.Drawing.Size(82, 22);
             this.txtPorcentaje.TabIndex = 3;
             this.txtPorcentaje.Text = "0.50";
             // 
@@ -211,6 +211,7 @@ namespace TeatroSistema.View
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar venta";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // dgvAsientos
             // 
@@ -234,21 +235,11 @@ namespace TeatroSistema.View
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 277);
+            this.label3.Location = new System.Drawing.Point(29, 279);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 17);
             this.label3.TabIndex = 9;
             this.label3.Text = "Asientos Disponibles:";
-            // 
-            // btnAddBoleto
-            // 
-            this.btnAddBoleto.Location = new System.Drawing.Point(20, 341);
-            this.btnAddBoleto.Name = "btnAddBoleto";
-            this.btnAddBoleto.Size = new System.Drawing.Size(402, 34);
-            this.btnAddBoleto.TabIndex = 7;
-            this.btnAddBoleto.Text = "Agregar boleto";
-            this.btnAddBoleto.UseVisualStyleBackColor = true;
-            this.btnAddBoleto.Click += new System.EventHandler(this.btnAddBoleto_Click);
             // 
             // btnEliminarBoleto
             // 
@@ -269,27 +260,11 @@ namespace TeatroSistema.View
             this.label7.TabIndex = 1;
             this.label7.Text = "Asientos ordenados:";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(281, 280);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 17);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Asiento:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(346, 277);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(89, 22);
-            this.textBox2.TabIndex = 10;
-            // 
             // btnVerAsientos
             // 
-            this.btnVerAsientos.Location = new System.Drawing.Point(154, 272);
+            this.btnVerAsientos.Location = new System.Drawing.Point(178, 274);
             this.btnVerAsientos.Name = "btnVerAsientos";
-            this.btnVerAsientos.Size = new System.Drawing.Size(61, 27);
+            this.btnVerAsientos.Size = new System.Drawing.Size(193, 27);
             this.btnVerAsientos.TabIndex = 7;
             this.btnVerAsientos.Text = "Ver...";
             this.btnVerAsientos.UseVisualStyleBackColor = true;
@@ -298,7 +273,7 @@ namespace TeatroSistema.View
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(284, 430);
+            this.label11.Location = new System.Drawing.Point(284, 390);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(99, 17);
             this.label11.TabIndex = 1;
@@ -307,7 +282,7 @@ namespace TeatroSistema.View
             // txtID
             // 
             this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(389, 427);
+            this.txtID.Location = new System.Drawing.Point(389, 387);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(46, 22);
             this.txtID.TabIndex = 10;
@@ -331,20 +306,39 @@ namespace TeatroSistema.View
             this.lblID.TabIndex = 1;
             this.lblID.Text = "0";
             // 
+            // btnNuevoCliente
+            // 
+            this.btnNuevoCliente.Location = new System.Drawing.Point(229, 449);
+            this.btnNuevoCliente.Name = "btnNuevoCliente";
+            this.btnNuevoCliente.Size = new System.Drawing.Size(206, 34);
+            this.btnNuevoCliente.TabIndex = 7;
+            this.btnNuevoCliente.Text = "Nuevo Cliente";
+            this.btnNuevoCliente.UseVisualStyleBackColor = true;
+            this.btnNuevoCliente.Click += new System.EventHandler(this.btnNuevoCliente_Event);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(17, 449);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(206, 34);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Cancelar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnCancelarCliente_Event);
+            // 
             // frmVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1234, 497);
             this.Controls.Add(this.txtID);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnVerAsientos);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnVenta);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnNuevoCliente);
             this.Controls.Add(this.btnEliminarBoleto);
-            this.Controls.Add(this.btnAddBoleto);
             this.Controls.Add(this.dgvAsientos);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtPrecio);
@@ -395,15 +389,14 @@ namespace TeatroSistema.View
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.DataGridView dgvAsientos;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnAddBoleto;
         private System.Windows.Forms.Button btnEliminarBoleto;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnVerAsientos;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Button btnNuevoCliente;
+        private System.Windows.Forms.Button button1;
     }
 }
