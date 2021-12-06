@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TeatroSistema",
+    "\\TeatroSistema\\View",
+    "\\TeatroSistema\\View\\Reportes"
   ],
-  "SelectedNode": "\\TeatroSistema.sln",
+  "SelectedNode": "\\TeatroSistema\\View\\Reportes\\dtVentas.xsd",
   "PreviewInSolutionExplorer": false
 }
