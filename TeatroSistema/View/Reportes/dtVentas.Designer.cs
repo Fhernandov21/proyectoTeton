@@ -314,9 +314,9 @@ namespace TeatroSistema.View.Reportes {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class Mostrar_FacturaVentaDataTable : global::System.Data.TypedTableBase<Mostrar_FacturaVentaRow> {
             
-            private global::System.Data.DataColumn columnNumero_de_Venta;
+            private global::System.Data.DataColumn columnNumeroVenta;
             
-            private global::System.Data.DataColumn columnNombre_del_Cliente;
+            private global::System.Data.DataColumn columnNombreComprador;
             
             private global::System.Data.DataColumn columnSubTotal;
             
@@ -359,17 +359,17 @@ namespace TeatroSistema.View.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Numero_de_VentaColumn {
+            public global::System.Data.DataColumn NumeroVentaColumn {
                 get {
-                    return this.columnNumero_de_Venta;
+                    return this.columnNumeroVenta;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Nombre_del_ClienteColumn {
+            public global::System.Data.DataColumn NombreCompradorColumn {
                 get {
-                    return this.columnNombre_del_Cliente;
+                    return this.columnNombreComprador;
                 }
             }
             
@@ -434,11 +434,11 @@ namespace TeatroSistema.View.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Mostrar_FacturaVentaRow AddMostrar_FacturaVentaRow(int Numero_de_Venta, string Nombre_del_Cliente, double SubTotal, double IVA, double TOTAL) {
+            public Mostrar_FacturaVentaRow AddMostrar_FacturaVentaRow(int NumeroVenta, string NombreComprador, double SubTotal, double IVA, double TOTAL) {
                 Mostrar_FacturaVentaRow rowMostrar_FacturaVentaRow = ((Mostrar_FacturaVentaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Numero_de_Venta,
-                        Nombre_del_Cliente,
+                        NumeroVenta,
+                        NombreComprador,
                         SubTotal,
                         IVA,
                         TOTAL};
@@ -464,8 +464,8 @@ namespace TeatroSistema.View.Reportes {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnNumero_de_Venta = base.Columns["Numero de Venta"];
-                this.columnNombre_del_Cliente = base.Columns["Nombre del Cliente"];
+                this.columnNumeroVenta = base.Columns["NumeroVenta"];
+                this.columnNombreComprador = base.Columns["NombreComprador"];
                 this.columnSubTotal = base.Columns["SubTotal"];
                 this.columnIVA = base.Columns["IVA"];
                 this.columnTOTAL = base.Columns["TOTAL"];
@@ -474,19 +474,19 @@ namespace TeatroSistema.View.Reportes {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnNumero_de_Venta = new global::System.Data.DataColumn("Numero de Venta", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNumero_de_Venta);
-                this.columnNombre_del_Cliente = new global::System.Data.DataColumn("Nombre del Cliente", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombre_del_Cliente);
+                this.columnNumeroVenta = new global::System.Data.DataColumn("NumeroVenta", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNumeroVenta);
+                this.columnNombreComprador = new global::System.Data.DataColumn("NombreComprador", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreComprador);
                 this.columnSubTotal = new global::System.Data.DataColumn("SubTotal", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSubTotal);
                 this.columnIVA = new global::System.Data.DataColumn("IVA", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIVA);
                 this.columnTOTAL = new global::System.Data.DataColumn("TOTAL", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTOTAL);
-                this.columnNumero_de_Venta.AllowDBNull = false;
-                this.columnNombre_del_Cliente.AllowDBNull = false;
-                this.columnNombre_del_Cliente.MaxLength = 250;
+                this.columnNumeroVenta.AllowDBNull = false;
+                this.columnNombreComprador.AllowDBNull = false;
+                this.columnNombreComprador.MaxLength = 250;
                 this.columnSubTotal.ReadOnly = true;
                 this.columnIVA.ReadOnly = true;
                 this.columnTOTAL.ReadOnly = true;
@@ -623,11 +623,11 @@ namespace TeatroSistema.View.Reportes {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class MostrarDetalle_FacturaVentaDataTable : global::System.Data.TypedTableBase<MostrarDetalle_FacturaVentaRow> {
             
-            private global::System.Data.DataColumn columnNumero_de_Venta;
+            private global::System.Data.DataColumn columnNumeroVenta;
             
             private global::System.Data.DataColumn columnAsiento;
             
-            private global::System.Data.DataColumn columnCosto;
+            private global::System.Data.DataColumn columnCostoAsiento;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -664,9 +664,9 @@ namespace TeatroSistema.View.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Numero_de_VentaColumn {
+            public global::System.Data.DataColumn NumeroVentaColumn {
                 get {
-                    return this.columnNumero_de_Venta;
+                    return this.columnNumeroVenta;
                 }
             }
             
@@ -680,9 +680,9 @@ namespace TeatroSistema.View.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn CostoColumn {
+            public global::System.Data.DataColumn CostoAsientoColumn {
                 get {
-                    return this.columnCosto;
+                    return this.columnCostoAsiento;
                 }
             }
             
@@ -723,12 +723,12 @@ namespace TeatroSistema.View.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public MostrarDetalle_FacturaVentaRow AddMostrarDetalle_FacturaVentaRow(int Numero_de_Venta, int Asiento, double Costo) {
+            public MostrarDetalle_FacturaVentaRow AddMostrarDetalle_FacturaVentaRow(int NumeroVenta, int Asiento, double CostoAsiento) {
                 MostrarDetalle_FacturaVentaRow rowMostrarDetalle_FacturaVentaRow = ((MostrarDetalle_FacturaVentaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Numero_de_Venta,
+                        NumeroVenta,
                         Asiento,
-                        Costo};
+                        CostoAsiento};
                 rowMostrarDetalle_FacturaVentaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowMostrarDetalle_FacturaVentaRow);
                 return rowMostrarDetalle_FacturaVentaRow;
@@ -751,22 +751,22 @@ namespace TeatroSistema.View.Reportes {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnNumero_de_Venta = base.Columns["Numero de Venta"];
+                this.columnNumeroVenta = base.Columns["NumeroVenta"];
                 this.columnAsiento = base.Columns["Asiento"];
-                this.columnCosto = base.Columns["Costo"];
+                this.columnCostoAsiento = base.Columns["CostoAsiento"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnNumero_de_Venta = new global::System.Data.DataColumn("Numero de Venta", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNumero_de_Venta);
+                this.columnNumeroVenta = new global::System.Data.DataColumn("NumeroVenta", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNumeroVenta);
                 this.columnAsiento = new global::System.Data.DataColumn("Asiento", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAsiento);
-                this.columnCosto = new global::System.Data.DataColumn("Costo", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCosto);
-                this.columnNumero_de_Venta.AllowDBNull = false;
-                this.columnCosto.AllowDBNull = false;
+                this.columnCostoAsiento = new global::System.Data.DataColumn("CostoAsiento", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCostoAsiento);
+                this.columnNumeroVenta.AllowDBNull = false;
+                this.columnCostoAsiento.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -909,23 +909,23 @@ namespace TeatroSistema.View.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Numero_de_Venta {
+            public int NumeroVenta {
                 get {
-                    return ((int)(this[this.tableMostrar_FacturaVenta.Numero_de_VentaColumn]));
+                    return ((int)(this[this.tableMostrar_FacturaVenta.NumeroVentaColumn]));
                 }
                 set {
-                    this[this.tableMostrar_FacturaVenta.Numero_de_VentaColumn] = value;
+                    this[this.tableMostrar_FacturaVenta.NumeroVentaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Nombre_del_Cliente {
+            public string NombreComprador {
                 get {
-                    return ((string)(this[this.tableMostrar_FacturaVenta.Nombre_del_ClienteColumn]));
+                    return ((string)(this[this.tableMostrar_FacturaVenta.NombreCompradorColumn]));
                 }
                 set {
-                    this[this.tableMostrar_FacturaVenta.Nombre_del_ClienteColumn] = value;
+                    this[this.tableMostrar_FacturaVenta.NombreCompradorColumn] = value;
                 }
             }
             
@@ -1030,12 +1030,12 @@ namespace TeatroSistema.View.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Numero_de_Venta {
+            public int NumeroVenta {
                 get {
-                    return ((int)(this[this.tableMostrarDetalle_FacturaVenta.Numero_de_VentaColumn]));
+                    return ((int)(this[this.tableMostrarDetalle_FacturaVenta.NumeroVentaColumn]));
                 }
                 set {
-                    this[this.tableMostrarDetalle_FacturaVenta.Numero_de_VentaColumn] = value;
+                    this[this.tableMostrarDetalle_FacturaVenta.NumeroVentaColumn] = value;
                 }
             }
             
@@ -1058,12 +1058,12 @@ namespace TeatroSistema.View.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public double Costo {
+            public double CostoAsiento {
                 get {
-                    return ((double)(this[this.tableMostrarDetalle_FacturaVenta.CostoColumn]));
+                    return ((double)(this[this.tableMostrarDetalle_FacturaVenta.CostoAsientoColumn]));
                 }
                 set {
-                    this[this.tableMostrarDetalle_FacturaVenta.CostoColumn] = value;
+                    this[this.tableMostrarDetalle_FacturaVenta.CostoAsientoColumn] = value;
                 }
             }
             
@@ -1273,8 +1273,8 @@ namespace TeatroSistema.View.Reportes.dtVentasTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Mostrar_FacturaVenta";
-            tableMapping.ColumnMappings.Add("Numero de Venta", "Numero de Venta");
-            tableMapping.ColumnMappings.Add("Nombre del Cliente", "Nombre del Cliente");
+            tableMapping.ColumnMappings.Add("NumeroVenta", "NumeroVenta");
+            tableMapping.ColumnMappings.Add("NombreComprador", "NombreComprador");
             tableMapping.ColumnMappings.Add("SubTotal", "SubTotal");
             tableMapping.ColumnMappings.Add("IVA", "IVA");
             tableMapping.ColumnMappings.Add("TOTAL", "TOTAL");
@@ -1285,7 +1285,7 @@ namespace TeatroSistema.View.Reportes.dtVentasTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TeatroSistema.Properties.Settings.Default.TeatroConnectionString;
+            this._connection.ConnectionString = global::TeatroSistema.Properties.Settings.Default.TeatroConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1458,9 +1458,9 @@ namespace TeatroSistema.View.Reportes.dtVentasTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "MostrarDetalle_FacturaVenta";
-            tableMapping.ColumnMappings.Add("Numero de Venta", "Numero de Venta");
+            tableMapping.ColumnMappings.Add("NumeroVenta", "NumeroVenta");
             tableMapping.ColumnMappings.Add("Asiento", "Asiento");
-            tableMapping.ColumnMappings.Add("Costo", "Costo");
+            tableMapping.ColumnMappings.Add("CostoAsiento", "CostoAsiento");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -1468,7 +1468,7 @@ namespace TeatroSistema.View.Reportes.dtVentasTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::TeatroSistema.Properties.Settings.Default.TeatroConnectionString;
+            this._connection.ConnectionString = global::TeatroSistema.Properties.Settings.Default.TeatroConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

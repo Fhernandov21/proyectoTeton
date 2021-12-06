@@ -2,14 +2,15 @@
 <xs:schema id="dtVentas" targetNamespace="http://tempuri.org/dtVentas.xsd" xmlns:mstns="http://tempuri.org/dtVentas.xsd" xmlns="http://tempuri.org/dtVentas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TeatroConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TeatroConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TeatroSistema.Properties.Settings.GlobalReference.Default.TeatroConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TeatroConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TeatroConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TeatroSistema.Properties.Settings.GlobalReference.Default.TeatroConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Mostrar_FacturaVentaTableAdapter" GeneratorDataComponentClassName="Mostrar_FacturaVentaTableAdapter" Name="Mostrar_FacturaVenta" UserDataComponentName="Mostrar_FacturaVentaTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="TeatroConnectionString (Settings)" DbObjectName="Teatro.dbo.Mostrar_FacturaVenta" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="TeatroConnectionString1 (Settings)" DbObjectName="Teatro.dbo.Mostrar_FacturaVenta" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.Mostrar_FacturaVenta</CommandText>
@@ -22,8 +23,8 @@
               </DbSource>
             </MainSource>
             <Mappings>
-              <Mapping SourceColumn="Numero de Venta" DataSetColumn="Numero de Venta" />
-              <Mapping SourceColumn="Nombre del Cliente" DataSetColumn="Nombre del Cliente" />
+              <Mapping SourceColumn="NumeroVenta" DataSetColumn="NumeroVenta" />
+              <Mapping SourceColumn="NombreComprador" DataSetColumn="NombreComprador" />
               <Mapping SourceColumn="SubTotal" DataSetColumn="SubTotal" />
               <Mapping SourceColumn="IVA" DataSetColumn="IVA" />
               <Mapping SourceColumn="TOTAL" DataSetColumn="TOTAL" />
@@ -32,7 +33,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MostrarDetalle_FacturaVentaTableAdapter" GeneratorDataComponentClassName="MostrarDetalle_FacturaVentaTableAdapter" Name="MostrarDetalle_FacturaVenta" UserDataComponentName="MostrarDetalle_FacturaVentaTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="TeatroConnectionString (Settings)" DbObjectName="Teatro.dbo.MostrarDetalle_FacturaVenta" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="TeatroConnectionString1 (Settings)" DbObjectName="Teatro.dbo.MostrarDetalle_FacturaVenta" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.MostrarDetalle_FacturaVenta</CommandText>
@@ -45,9 +46,9 @@
               </DbSource>
             </MainSource>
             <Mappings>
-              <Mapping SourceColumn="Numero de Venta" DataSetColumn="Numero de Venta" />
+              <Mapping SourceColumn="NumeroVenta" DataSetColumn="NumeroVenta" />
               <Mapping SourceColumn="Asiento" DataSetColumn="Asiento" />
-              <Mapping SourceColumn="Costo" DataSetColumn="Costo" />
+              <Mapping SourceColumn="CostoAsiento" DataSetColumn="CostoAsiento" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -62,8 +63,8 @@
         <xs:element name="Mostrar_FacturaVenta" msprop:Generator_TableClassName="Mostrar_FacturaVentaDataTable" msprop:Generator_TableVarName="tableMostrar_FacturaVenta" msprop:Generator_TablePropName="Mostrar_FacturaVenta" msprop:Generator_RowDeletingName="Mostrar_FacturaVentaRowDeleting" msprop:Generator_RowChangingName="Mostrar_FacturaVentaRowChanging" msprop:Generator_RowEvHandlerName="Mostrar_FacturaVentaRowChangeEventHandler" msprop:Generator_RowDeletedName="Mostrar_FacturaVentaRowDeleted" msprop:Generator_UserTableName="Mostrar_FacturaVenta" msprop:Generator_RowChangedName="Mostrar_FacturaVentaRowChanged" msprop:Generator_RowEvArgName="Mostrar_FacturaVentaRowChangeEvent" msprop:Generator_RowClassName="Mostrar_FacturaVentaRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Numero_x0020_de_x0020_Venta" msprop:Generator_ColumnVarNameInTable="columnNumero_de_Venta" msprop:Generator_ColumnPropNameInRow="Numero_de_Venta" msprop:Generator_ColumnPropNameInTable="Numero_de_VentaColumn" msprop:Generator_UserColumnName="Numero de Venta" type="xs:int" />
-              <xs:element name="Nombre_x0020_del_x0020_Cliente" msprop:Generator_ColumnVarNameInTable="columnNombre_del_Cliente" msprop:Generator_ColumnPropNameInRow="Nombre_del_Cliente" msprop:Generator_ColumnPropNameInTable="Nombre_del_ClienteColumn" msprop:Generator_UserColumnName="Nombre del Cliente">
+              <xs:element name="NumeroVenta" msprop:Generator_ColumnVarNameInTable="columnNumeroVenta" msprop:Generator_ColumnPropNameInRow="NumeroVenta" msprop:Generator_ColumnPropNameInTable="NumeroVentaColumn" msprop:Generator_UserColumnName="NumeroVenta" type="xs:int" />
+              <xs:element name="NombreComprador" msprop:Generator_ColumnVarNameInTable="columnNombreComprador" msprop:Generator_ColumnPropNameInRow="NombreComprador" msprop:Generator_ColumnPropNameInTable="NombreCompradorColumn" msprop:Generator_UserColumnName="NombreComprador">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="250" />
@@ -79,9 +80,9 @@
         <xs:element name="MostrarDetalle_FacturaVenta" msprop:Generator_TableClassName="MostrarDetalle_FacturaVentaDataTable" msprop:Generator_TableVarName="tableMostrarDetalle_FacturaVenta" msprop:Generator_TablePropName="MostrarDetalle_FacturaVenta" msprop:Generator_RowDeletingName="MostrarDetalle_FacturaVentaRowDeleting" msprop:Generator_RowChangingName="MostrarDetalle_FacturaVentaRowChanging" msprop:Generator_RowEvHandlerName="MostrarDetalle_FacturaVentaRowChangeEventHandler" msprop:Generator_RowDeletedName="MostrarDetalle_FacturaVentaRowDeleted" msprop:Generator_UserTableName="MostrarDetalle_FacturaVenta" msprop:Generator_RowChangedName="MostrarDetalle_FacturaVentaRowChanged" msprop:Generator_RowEvArgName="MostrarDetalle_FacturaVentaRowChangeEvent" msprop:Generator_RowClassName="MostrarDetalle_FacturaVentaRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Numero_x0020_de_x0020_Venta" msprop:Generator_ColumnVarNameInTable="columnNumero_de_Venta" msprop:Generator_ColumnPropNameInRow="Numero_de_Venta" msprop:Generator_ColumnPropNameInTable="Numero_de_VentaColumn" msprop:Generator_UserColumnName="Numero de Venta" type="xs:int" />
+              <xs:element name="NumeroVenta" msprop:Generator_ColumnVarNameInTable="columnNumeroVenta" msprop:Generator_ColumnPropNameInRow="NumeroVenta" msprop:Generator_ColumnPropNameInTable="NumeroVentaColumn" msprop:Generator_UserColumnName="NumeroVenta" type="xs:int" />
               <xs:element name="Asiento" msprop:Generator_ColumnVarNameInTable="columnAsiento" msprop:Generator_ColumnPropNameInRow="Asiento" msprop:Generator_ColumnPropNameInTable="AsientoColumn" msprop:Generator_UserColumnName="Asiento" type="xs:int" minOccurs="0" />
-              <xs:element name="Costo" msprop:Generator_ColumnVarNameInTable="columnCosto" msprop:Generator_ColumnPropNameInRow="Costo" msprop:Generator_ColumnPropNameInTable="CostoColumn" msprop:Generator_UserColumnName="Costo" type="xs:double" />
+              <xs:element name="CostoAsiento" msprop:Generator_ColumnVarNameInTable="columnCostoAsiento" msprop:Generator_ColumnPropNameInRow="CostoAsiento" msprop:Generator_ColumnPropNameInTable="CostoAsientoColumn" msprop:Generator_UserColumnName="CostoAsiento" type="xs:double" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

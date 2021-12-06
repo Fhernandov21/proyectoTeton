@@ -32,5 +32,16 @@ namespace TeatroSistema.Properties {
                 return ((string)(this["TeatroConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=FHERNANDO;Initial Catalog=Teatro;Persist Security Info=True;User ID=a" +
+            "dminTeatro;Password=fher123")]
+        public string TeatroConnectionString1 {
+            get {
+                return ((string)(this["TeatroConnectionString1"]));
+            }
+        }
     }
 }

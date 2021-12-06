@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TeatroSistema.Controller;
+using TeatroSistema.View.Reportes;
 
 namespace TeatroSistema.View
 {
@@ -168,10 +169,14 @@ namespace TeatroSistema.View
             MessageBox.Show("Venta Realizada con éxisto" , "Mensaje del sistema");
             dgvAsientos.Rows.Clear();
             txtNombre.Enabled = false;
+            frmFacturaVenta fve = new frmFacturaVenta(numeroVenta);
+            fve.ShowDialog();
         }
 
         private void txtCedula_KeyUp(object sender, KeyEventArgs e)
         {
+            txtNombre.ForeColor = Color.Black;
+            txtID.ForeColor = Color.Black;
             txtNombre.Text = CVenta.Cedula_Comprador_NOMBRE(txtCedula.Text);
             txtID.Text = CVenta.Cedula_Comprador_ID(txtCedula.Text).ToString();
         }

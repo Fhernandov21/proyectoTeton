@@ -273,3 +273,6 @@ C:\Users\fherv\Source\Repos\proyectoTeton\TeatroSistema\bin\Debug\pt\Microsoft.R
 C:\Users\fherv\Source\Repos\proyectoTeton\TeatroSistema\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\fherv\Source\Repos\proyectoTeton\TeatroSistema\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\fherv\Source\Repos\proyectoTeton\TeatroSistema\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\fherv\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\TeatroSistema.View.Reportes.frmFacturaVenta.resources
+C:\Users\fherv\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\RdlCompile.cache
+C:\Users\fherv\Source\Repos\proyectoTeton\TeatroSistema\obj\Debug\RdlCompile.compiled
