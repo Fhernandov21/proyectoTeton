@@ -163,7 +163,7 @@ namespace TeatroSistema.View
             {
                 //int numVenta, float costoAsiento, float pt, int asiento, string noSalon
                 string okkk = CVenta.Insertar_DetalleVenta(numeroVenta, float.Parse(row.Cells[1].Value.ToString()),
-                    (float)0.7, int.Parse(row.Cells[0].Value.ToString()), salon, int.Parse(dgvEventos.SelectedRows[0].Cells[0].Value.ToString()));
+                   (float)0.5, int.Parse(row.Cells[0].Value.ToString()), salon, int.Parse(dgvEventos.SelectedRows[0].Cells[0].Value.ToString()));
 
             }
             MessageBox.Show("Venta Realizada con éxisto" , "Mensaje del sistema");

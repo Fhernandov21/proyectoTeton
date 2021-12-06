@@ -33,7 +33,7 @@ namespace TeatroSistema.View
 
         private void FrmEmpresasMan_Load(object sender, EventArgs e)
         {
-
+            CargarEmpresas();
         }
 
         private void button1_Click(object sender, EventArgs e)

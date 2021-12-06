@@ -18,7 +18,7 @@ namespace TeatroSistema
             Application.SetCompatibleTextRenderingDefault(false);
 
 
-            Application.Run(new FrmEmpresasMan()) ;
+            Application.Run(new FrmLogin()) ;
         }
     }
 }

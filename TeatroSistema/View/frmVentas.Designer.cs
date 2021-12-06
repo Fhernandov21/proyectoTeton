@@ -304,7 +304,7 @@ namespace TeatroSistema.View
             this.Header.Controls.Add(this.btnExit);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header.Location = new System.Drawing.Point(0, 0);
-            this.Header.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Header.Margin = new System.Windows.Forms.Padding(4);
             this.Header.Name = "Header";
             this.Header.Size = new System.Drawing.Size(1443, 44);
             this.Header.TabIndex = 11;
@@ -317,7 +317,7 @@ namespace TeatroSistema.View
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExit.Location = new System.Drawing.Point(1398, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(45, 44);
             this.btnExit.TabIndex = 0;
@@ -334,7 +334,7 @@ namespace TeatroSistema.View
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(79, 454);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(456, 124);
             this.panel1.TabIndex = 12;
@@ -429,7 +429,7 @@ namespace TeatroSistema.View
             this.dgvEventos.EnableHeadersVisualStyles = false;
             this.dgvEventos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvEventos.Location = new System.Drawing.Point(79, 164);
-            this.dgvEventos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvEventos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEventos.Name = "dgvEventos";
             this.dgvEventos.ReadOnly = true;
             this.dgvEventos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -476,7 +476,7 @@ namespace TeatroSistema.View
             this.dgvAsientos.EnableHeadersVisualStyles = false;
             this.dgvAsientos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvAsientos.Location = new System.Drawing.Point(597, 343);
-            this.dgvAsientos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvAsientos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAsientos.Name = "dgvAsientos";
             this.dgvAsientos.ReadOnly = true;
             this.dgvAsientos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;

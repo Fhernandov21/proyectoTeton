@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TeatroSistema.View.Reportes;
 
 namespace TeatroSistema.View.Subframes
 {
@@ -35,7 +36,7 @@ namespace TeatroSistema.View.Subframes
         private void btnFacturarEvento_Click(object sender, EventArgs e)
         {
             SeleccionandoBoton((Button)sender);
-            FrmMain.MostrarFrames(Content, new FrmFacturarEvento());
+            FrmMain.MostrarFrames(Content, new frmRecaudacion());
         }
     }
 }

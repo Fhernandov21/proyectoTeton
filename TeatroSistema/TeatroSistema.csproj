@@ -119,6 +119,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="View\Reportes\dtRecaudacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtRecaudacion.xsd</DependentUpon>
+    </Compile>
     <Compile Include="View\Reportes\dtVentas.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -298,6 +303,12 @@
     <Compile Include="View\Reportes\frmFacturaVenta.Designer.cs">
       <DependentUpon>frmFacturaVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Reportes\frmRecaudacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Reportes\frmRecaudacion.Designer.cs">
+      <DependentUpon>frmRecaudacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Representantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -421,7 +432,11 @@
     <EmbeddedResource Include="View\Reportes\frmFacturaVenta.resx">
       <DependentUpon>frmFacturaVenta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Reportes\frmRecaudacion.resx">
+      <DependentUpon>frmRecaudacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Reportes\Report1.rdlc" />
+    <EmbeddedResource Include="View\Reportes\ReporteRecaudacion.rdlc" />
     <EmbeddedResource Include="View\Representantes.resx">
       <DependentUpon>Representantes.cs</DependentUpon>
     </EmbeddedResource>
@@ -447,6 +462,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="View\Reportes\dtRecaudacion.xsc">
+      <DependentUpon>dtRecaudacion.xsd</DependentUpon>
+    </None>
+    <None Include="View\Reportes\dtRecaudacion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtRecaudacion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="View\Reportes\dtRecaudacion.xss">
+      <DependentUpon>dtRecaudacion.xsd</DependentUpon>
+    </None>
     <None Include="View\Reportes\dtVentas.xsc">
       <DependentUpon>dtVentas.xsd</DependentUpon>
     </None>
