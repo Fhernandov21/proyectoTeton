@@ -79,9 +79,8 @@ namespace TeatroSistema.View
             this.Header.Controls.Add(this.btnExit);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header.Location = new System.Drawing.Point(0, 0);
-            this.Header.Margin = new System.Windows.Forms.Padding(4);
             this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(1591, 44);
+            this.Header.Size = new System.Drawing.Size(1193, 36);
             this.Header.TabIndex = 2;
             this.Header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Header_MouseDown);
             // 
@@ -91,10 +90,9 @@ namespace TeatroSistema.View
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExit.Location = new System.Drawing.Point(1546, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Location = new System.Drawing.Point(1159, 0);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(45, 44);
+            this.btnExit.Size = new System.Drawing.Size(34, 36);
             this.btnExit.TabIndex = 0;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -104,10 +102,10 @@ namespace TeatroSistema.View
             this.btnDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDetalles.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDetalles.ForeColor = System.Drawing.Color.White;
-            this.btnDetalles.Location = new System.Drawing.Point(36, 610);
-            this.btnDetalles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDetalles.Location = new System.Drawing.Point(27, 496);
+            this.btnDetalles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDetalles.Name = "btnDetalles";
-            this.btnDetalles.Size = new System.Drawing.Size(229, 59);
+            this.btnDetalles.Size = new System.Drawing.Size(172, 48);
             this.btnDetalles.TabIndex = 8;
             this.btnDetalles.Text = "Ver detalles";
             this.btnDetalles.UseVisualStyleBackColor = true;
@@ -139,10 +137,9 @@ namespace TeatroSistema.View
             this.AddEmpleado.Controls.Add(this.txtprimerNombre);
             this.AddEmpleado.Controls.Add(this.label3);
             this.AddEmpleado.Dock = System.Windows.Forms.DockStyle.Right;
-            this.AddEmpleado.Location = new System.Drawing.Point(1019, 44);
-            this.AddEmpleado.Margin = new System.Windows.Forms.Padding(4);
+            this.AddEmpleado.Location = new System.Drawing.Point(764, 36);
             this.AddEmpleado.Name = "AddEmpleado";
-            this.AddEmpleado.Size = new System.Drawing.Size(572, 696);
+            this.AddEmpleado.Size = new System.Drawing.Size(429, 565);
             this.AddEmpleado.TabIndex = 5;
             // 
             // btnCancelar
@@ -150,10 +147,10 @@ namespace TeatroSistema.View
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(295, 454);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancelar.Location = new System.Drawing.Point(221, 369);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(125, 43);
+            this.btnCancelar.Size = new System.Drawing.Size(94, 35);
             this.btnCancelar.TabIndex = 45;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -164,10 +161,9 @@ namespace TeatroSistema.View
             this.txtDireccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(145)))), ((int)(((byte)(212)))));
             this.txtDireccion.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtDireccion.Location = new System.Drawing.Point(193, 321);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDireccion.Location = new System.Drawing.Point(145, 261);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(356, 30);
+            this.txtDireccion.Size = new System.Drawing.Size(268, 26);
             this.txtDireccion.TabIndex = 44;
             // 
             // label12
@@ -175,9 +171,10 @@ namespace TeatroSistema.View
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(12, 325);
+            this.label12.Location = new System.Drawing.Point(9, 264);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(102, 23);
+            this.label12.Size = new System.Drawing.Size(82, 19);
             this.label12.TabIndex = 43;
             this.label12.Text = "Direccion: ";
             // 
@@ -186,10 +183,9 @@ namespace TeatroSistema.View
             this.txtCodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(145)))), ((int)(((byte)(212)))));
             this.txtCodigo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtCodigo.Location = new System.Drawing.Point(193, 396);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigo.Location = new System.Drawing.Point(145, 322);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(356, 30);
+            this.txtCodigo.Size = new System.Drawing.Size(268, 26);
             this.txtCodigo.TabIndex = 42;
             // 
             // txtSalario
@@ -197,10 +193,9 @@ namespace TeatroSistema.View
             this.txtSalario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(145)))), ((int)(((byte)(212)))));
             this.txtSalario.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtSalario.Location = new System.Drawing.Point(193, 358);
-            this.txtSalario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSalario.Location = new System.Drawing.Point(145, 291);
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(356, 30);
+            this.txtSalario.Size = new System.Drawing.Size(268, 26);
             this.txtSalario.TabIndex = 41;
             // 
             // txtCedula
@@ -208,10 +203,9 @@ namespace TeatroSistema.View
             this.txtCedula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(145)))), ((int)(((byte)(212)))));
             this.txtCedula.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtCedula.Location = new System.Drawing.Point(193, 284);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCedula.Location = new System.Drawing.Point(145, 231);
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(356, 30);
+            this.txtCedula.Size = new System.Drawing.Size(268, 26);
             this.txtCedula.TabIndex = 40;
             // 
             // txtsegundoApellido
@@ -219,10 +213,9 @@ namespace TeatroSistema.View
             this.txtsegundoApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(145)))), ((int)(((byte)(212)))));
             this.txtsegundoApellido.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsegundoApellido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtsegundoApellido.Location = new System.Drawing.Point(193, 246);
-            this.txtsegundoApellido.Margin = new System.Windows.Forms.Padding(4);
+            this.txtsegundoApellido.Location = new System.Drawing.Point(145, 200);
             this.txtsegundoApellido.Name = "txtsegundoApellido";
-            this.txtsegundoApellido.Size = new System.Drawing.Size(356, 30);
+            this.txtsegundoApellido.Size = new System.Drawing.Size(268, 26);
             this.txtsegundoApellido.TabIndex = 39;
             // 
             // txtprimerApellido
@@ -230,10 +223,9 @@ namespace TeatroSistema.View
             this.txtprimerApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(145)))), ((int)(((byte)(212)))));
             this.txtprimerApellido.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtprimerApellido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtprimerApellido.Location = new System.Drawing.Point(193, 206);
-            this.txtprimerApellido.Margin = new System.Windows.Forms.Padding(4);
+            this.txtprimerApellido.Location = new System.Drawing.Point(145, 167);
             this.txtprimerApellido.Name = "txtprimerApellido";
-            this.txtprimerApellido.Size = new System.Drawing.Size(356, 30);
+            this.txtprimerApellido.Size = new System.Drawing.Size(268, 26);
             this.txtprimerApellido.TabIndex = 38;
             // 
             // txtsegundoNombre
@@ -241,10 +233,9 @@ namespace TeatroSistema.View
             this.txtsegundoNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(145)))), ((int)(((byte)(212)))));
             this.txtsegundoNombre.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsegundoNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtsegundoNombre.Location = new System.Drawing.Point(193, 165);
-            this.txtsegundoNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtsegundoNombre.Location = new System.Drawing.Point(145, 134);
             this.txtsegundoNombre.Name = "txtsegundoNombre";
-            this.txtsegundoNombre.Size = new System.Drawing.Size(356, 30);
+            this.txtsegundoNombre.Size = new System.Drawing.Size(268, 26);
             this.txtsegundoNombre.TabIndex = 37;
             // 
             // label11
@@ -252,9 +243,10 @@ namespace TeatroSistema.View
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(12, 400);
+            this.label11.Location = new System.Drawing.Point(9, 325);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(81, 23);
+            this.label11.Size = new System.Drawing.Size(65, 19);
             this.label11.TabIndex = 35;
             this.label11.Text = "Codigo: ";
             // 
@@ -263,9 +255,10 @@ namespace TeatroSistema.View
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(12, 362);
+            this.label10.Location = new System.Drawing.Point(9, 294);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 23);
+            this.label10.Size = new System.Drawing.Size(65, 19);
             this.label10.TabIndex = 34;
             this.label10.Text = "Salario: ";
             // 
@@ -274,9 +267,10 @@ namespace TeatroSistema.View
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(12, 288);
+            this.label9.Location = new System.Drawing.Point(9, 234);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 23);
+            this.label9.Size = new System.Drawing.Size(65, 19);
             this.label9.TabIndex = 33;
             this.label9.Text = "Cedula: ";
             // 
@@ -285,9 +279,10 @@ namespace TeatroSistema.View
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(12, 250);
+            this.label8.Location = new System.Drawing.Point(9, 203);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(166, 23);
+            this.label8.Size = new System.Drawing.Size(133, 19);
             this.label8.TabIndex = 32;
             this.label8.Text = "Segundo Apellido: ";
             // 
@@ -296,9 +291,10 @@ namespace TeatroSistema.View
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(12, 209);
+            this.label7.Location = new System.Drawing.Point(9, 170);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 23);
+            this.label7.Size = new System.Drawing.Size(121, 19);
             this.label7.TabIndex = 31;
             this.label7.Text = "Primer Apellido: ";
             // 
@@ -307,9 +303,10 @@ namespace TeatroSistema.View
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 170);
+            this.label6.Location = new System.Drawing.Point(9, 138);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(165, 23);
+            this.label6.Size = new System.Drawing.Size(133, 19);
             this.label6.TabIndex = 30;
             this.label6.Text = "Segundo Nombre: ";
             // 
@@ -318,9 +315,10 @@ namespace TeatroSistema.View
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(12, 127);
+            this.label5.Location = new System.Drawing.Point(9, 103);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 23);
+            this.label5.Size = new System.Drawing.Size(121, 19);
             this.label5.TabIndex = 29;
             this.label5.Text = "Primer Nombre: ";
             // 
@@ -329,9 +327,10 @@ namespace TeatroSistema.View
             this.lblIdEmpleado.AutoSize = true;
             this.lblIdEmpleado.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIdEmpleado.ForeColor = System.Drawing.Color.White;
-            this.lblIdEmpleado.Location = new System.Drawing.Point(12, 85);
+            this.lblIdEmpleado.Location = new System.Drawing.Point(9, 69);
+            this.lblIdEmpleado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIdEmpleado.Name = "lblIdEmpleado";
-            this.lblIdEmpleado.Size = new System.Drawing.Size(127, 23);
+            this.lblIdEmpleado.Size = new System.Drawing.Size(102, 19);
             this.lblIdEmpleado.TabIndex = 28;
             this.lblIdEmpleado.Text = "Id Empleado: ";
             // 
@@ -340,9 +339,10 @@ namespace TeatroSistema.View
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(7, 94);
+            this.label4.Location = new System.Drawing.Point(5, 76);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 26);
+            this.label4.Size = new System.Drawing.Size(0, 22);
             this.label4.TabIndex = 27;
             // 
             // btnSave
@@ -350,10 +350,10 @@ namespace TeatroSistema.View
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(425, 454);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSave.Location = new System.Drawing.Point(319, 369);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(125, 43);
+            this.btnSave.Size = new System.Drawing.Size(94, 35);
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Guardar";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -364,10 +364,9 @@ namespace TeatroSistema.View
             this.txtprimerNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(145)))), ((int)(((byte)(212)))));
             this.txtprimerNombre.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtprimerNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtprimerNombre.Location = new System.Drawing.Point(193, 123);
-            this.txtprimerNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtprimerNombre.Location = new System.Drawing.Point(145, 100);
             this.txtprimerNombre.Name = "txtprimerNombre";
-            this.txtprimerNombre.Size = new System.Drawing.Size(356, 30);
+            this.txtprimerNombre.Size = new System.Drawing.Size(268, 26);
             this.txtprimerNombre.TabIndex = 26;
             // 
             // label3
@@ -375,9 +374,10 @@ namespace TeatroSistema.View
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(168, 32);
+            this.label3.Location = new System.Drawing.Point(126, 26);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(247, 26);
+            this.label3.Size = new System.Drawing.Size(197, 22);
             this.label3.TabIndex = 25;
             this.label3.Text = "Informacion Empleado";
             // 
@@ -391,18 +391,21 @@ namespace TeatroSistema.View
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.panelTable);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 44);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(0, 36);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1019, 696);
+            this.panel2.Size = new System.Drawing.Size(764, 565);
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnSeleccionar
             // 
-            this.btnSeleccionar.Location = new System.Drawing.Point(284, 14);
+            this.btnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeleccionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeleccionar.ForeColor = System.Drawing.Color.White;
+            this.btnSeleccionar.Location = new System.Drawing.Point(250, 14);
+            this.btnSeleccionar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.Size = new System.Drawing.Size(138, 43);
+            this.btnSeleccionar.Size = new System.Drawing.Size(164, 35);
             this.btnSeleccionar.TabIndex = 47;
             this.btnSeleccionar.Text = "Seleccionar Empleado";
             this.btnSeleccionar.UseVisualStyleBackColor = true;
@@ -411,12 +414,11 @@ namespace TeatroSistema.View
             // btnNuevo
             // 
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
-            this.btnNuevo.Location = new System.Drawing.Point(756, 15);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNuevo.Location = new System.Drawing.Point(641, 14);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(125, 42);
+            this.btnNuevo.Size = new System.Drawing.Size(76, 34);
             this.btnNuevo.TabIndex = 45;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -425,12 +427,11 @@ namespace TeatroSistema.View
             // btnActualizar
             // 
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
-            this.btnActualizar.Location = new System.Drawing.Point(612, 14);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnActualizar.Location = new System.Drawing.Point(544, 13);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(136, 43);
+            this.btnActualizar.Size = new System.Drawing.Size(91, 35);
             this.btnActualizar.TabIndex = 46;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -439,12 +440,12 @@ namespace TeatroSistema.View
             // btnEstado
             // 
             this.btnEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstado.ForeColor = System.Drawing.Color.White;
-            this.btnEstado.Location = new System.Drawing.Point(428, 14);
-            this.btnEstado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEstado.Location = new System.Drawing.Point(418, 13);
+            this.btnEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEstado.Name = "btnEstado";
-            this.btnEstado.Size = new System.Drawing.Size(177, 44);
+            this.btnEstado.Size = new System.Drawing.Size(121, 36);
             this.btnEstado.TabIndex = 24;
             this.btnEstado.Text = "Cambiar Estado";
             this.btnEstado.UseVisualStyleBackColor = true;
@@ -455,19 +456,19 @@ namespace TeatroSistema.View
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(41, 22);
+            this.label1.Location = new System.Drawing.Point(31, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 26);
+            this.label1.Size = new System.Drawing.Size(190, 22);
             this.label1.TabIndex = 23;
             this.label1.Text = "Listado de Empleados";
             // 
             // panelTable
             // 
             this.panelTable.Controls.Add(this.dgvEmpleados);
-            this.panelTable.Location = new System.Drawing.Point(81, 66);
-            this.panelTable.Margin = new System.Windows.Forms.Padding(4);
+            this.panelTable.Location = new System.Drawing.Point(61, 54);
             this.panelTable.Name = "panelTable";
-            this.panelTable.Size = new System.Drawing.Size(875, 604);
+            this.panelTable.Size = new System.Drawing.Size(656, 491);
             this.panelTable.TabIndex = 0;
             // 
             // dgvEmpleados
@@ -494,7 +495,6 @@ namespace TeatroSistema.View
             this.dgvEmpleados.EnableHeadersVisualStyles = false;
             this.dgvEmpleados.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvEmpleados.Location = new System.Drawing.Point(0, 0);
-            this.dgvEmpleados.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEmpleados.MultiSelect = false;
             this.dgvEmpleados.Name = "dgvEmpleados";
             this.dgvEmpleados.ReadOnly = true;
@@ -516,7 +516,7 @@ namespace TeatroSistema.View
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvEmpleados.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvEmpleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEmpleados.Size = new System.Drawing.Size(875, 604);
+            this.dgvEmpleados.Size = new System.Drawing.Size(656, 491);
             this.dgvEmpleados.TabIndex = 40;
             this.dgvEmpleados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleados_CellContentClick);
             this.dgvEmpleados.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleados_CellEnter);
@@ -524,14 +524,13 @@ namespace TeatroSistema.View
             // 
             // FrmEmpleadoV2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1591, 740);
+            this.ClientSize = new System.Drawing.Size(1193, 601);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.AddEmpleado);
             this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmEmpleadoV2";
             this.Text = "FrmEmpleadoV2";
             this.Load += new System.EventHandler(this.FrmEmpleadoV2_Load);
