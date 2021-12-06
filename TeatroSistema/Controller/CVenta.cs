@@ -27,9 +27,9 @@ namespace TeatroSistema.Controller
             return new DVenta().Verificar_Asiento(asiento, IdEvento);
         }
 
-        public static string Insertar_DetalleVenta(int numVenta, float costoAsiento, float porcTeatro, int asiento, string noSalon)
+        public static string Insertar_DetalleVenta(int numVenta, float costoAsiento, float porcTeatro, int asiento, string noSalon, int idEvento)
         {
-            return new DVenta().Insertar_DetalleVenta(numVenta, costoAsiento, porcTeatro, asiento, noSalon);
+            return new DVenta().Insertar_DetalleVenta(numVenta, costoAsiento, porcTeatro, asiento, noSalon, idEvento);
         }
 
         public static int Cedula_Comprador_ID(string cedula)

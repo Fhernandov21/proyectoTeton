@@ -10,6 +10,6 @@ namespace TeatroSistema.Data
     class Conexion
     {                       //ServerName + DBName + Usuario + Contraseña
         public static string Cn =
-            @"Data Source=DESKTOP-JNDQ2L1\SQLEXPRESS; Initial Catalog=Teatro; user=sa; password=1234";
+            @"Data Source=FHERNANDO; Initial Catalog=Teatro; user=adminTeatro; password=fher123";
     }
 }

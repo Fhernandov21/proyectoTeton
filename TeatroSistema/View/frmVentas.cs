@@ -44,9 +44,9 @@ namespace TeatroSistema.View
         {
             txtPrecio.Text = dgvEventos.SelectedRows[0].Cells[0].Value.ToString();
             string imgEventoaux = dgvEventos.Rows[e.RowIndex].Cells[1].Value.ToString();
-            pictureBox1.Image = Image.FromFile(@"C:\Users\fherv\OneDrive\Escritorio\otra vex\TeatroSistema\Imagen\" +
-                imgEventoaux.Replace(" ", string.Empty) + ".jfif"
-            );
+            //pictureBox1.Image = Image.FromFile(@"C:\Users\fherv\OneDrive\Escritorio\otra vex\TeatroSistema\Imagen\" +
+            //    imgEventoaux.Replace(" ", string.Empty) + ".jfif"
+            //);
         }
 
         private void dgvEventos_CellEnter(object sender, DataGridViewCellEventArgs e)
@@ -54,9 +54,9 @@ namespace TeatroSistema.View
             txtPrecio.Text = dgvEventos.Rows[e.RowIndex].Cells[0].Value.ToString();
             dgvAsientos.Rows.Clear();
             string imgEventoaux = dgvEventos.Rows[e.RowIndex].Cells[1].Value.ToString();
-            pictureBox1.Image = Image.FromFile(@"C:\Users\fherv\OneDrive\Escritorio\otra vex\TeatroSistema\Imagen\" +
-                imgEventoaux.Replace(" ", string.Empty) + ".jfif"
-            );
+            //pictureBox1.Image = Image.FromFile(@"C:\Users\fherv\OneDrive\Escritorio\otra vex\TeatroSistema\Imagen\" +
+            //    imgEventoaux.Replace(" ", string.Empty) + ".jfif"
+            //);
 
         }
 
@@ -65,7 +65,7 @@ namespace TeatroSistema.View
             int idEvento = int.Parse(dgvEventos.SelectedRows[0].Cells[0].Value.ToString());
             string salon = dgvEventos.SelectedRows[0].Cells[2].Value.ToString();
             object[] asientos = new object[10];
-            frmAsientos fa = new frmAsientos(salon, idEve);
+            frmAsientos fa = new frmAsientos(salon, idEvento);
             for (int i = 0; i < 10; i++)
             {
                 fa.dgvAsientosDisponibles.Columns.Add(i.ToString(), (i + 1).ToString());
@@ -114,16 +114,13 @@ namespace TeatroSistema.View
 
         private void btnVenta_Click(object sender, EventArgs e)
         {
-            var verificacion = MessageBox.Show("¿Desea cancelar la Venta?", "Mensje del sistema",
+            var verificacion = MessageBox.Show("¿Desea realizar la Venta?", "Mensje del sistema",
                 MessageBoxButtons.YesNo);
-            if (verificacion == DialogResult.Yes)
-            {
-
-            }
-            else
+            if (verificacion == DialogResult.No)
             {
                 return;
             }
+            
             if (dgvAsientos.Rows.Count == 0)
             {
                 return;
@@ -150,12 +147,14 @@ namespace TeatroSistema.View
 
             foreach (DataGridViewRow row in dgvAsientos.Rows)
             {
+                //int numVenta, float costoAsiento, float pt, int asiento, string noSalon
                 string okkk = CVenta.Insertar_DetalleVenta(numeroVenta, float.Parse(row.Cells[1].Value.ToString()),
-                    (float)0.7, int.Parse(row.Cells[0].Value.ToString()), salon);
-                MessageBox.Show("cmd en Detalle: " + okkk);
+                    (float)0.7, int.Parse(row.Cells[0].Value.ToString()), salon, int.Parse(dgvEventos.SelectedRows[0].Cells[0].Value.ToString()));
+
             }
-            MessageBox.Show("cmd Ventas: " + okkkk);
+            MessageBox.Show("Venta Realizada con éxisto" , "Mensaje del sistema");
             dgvAsientos.Rows.Clear();
+            txtNombre.Enabled = false;
         }
 
         private void txtCedula_KeyUp(object sender, KeyEventArgs e)

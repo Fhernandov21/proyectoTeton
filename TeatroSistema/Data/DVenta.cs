@@ -61,7 +61,7 @@ namespace TeatroSistema.Data
 
         }
 
-        public string Insertar_DetalleVenta(int numVenta, float costoAsiento, float pt, int asiento, string noSalon)
+        public string Insertar_DetalleVenta(int numVenta, float costoAsiento, float pt, int asiento, string noSalon, int idEvento)
         {
             string r = "";
             SqlConnection con = new SqlConnection(Conexion.Cn);
@@ -78,6 +78,7 @@ namespace TeatroSistema.Data
                 DCliente.crearParametro(cmd, "@PorcTeato", SqlDbType.Float, pt, 50);
                 DCliente.crearParametro(cmd, "@Asiento", SqlDbType.Int, asiento, 50);
                 DCliente.crearParametro(cmd, "@NombreSalon", SqlDbType.VarChar, noSalon, 50);
+                DCliente.crearParametro(cmd, "@IdEvento", SqlDbType.Int, idEvento, 50);
                 r = cmd.ExecuteNonQuery() == 1 ? "Ok" : "NotOk";
             }
             catch (Exception ex)
@@ -119,10 +120,10 @@ namespace TeatroSistema.Data
 
             try
             {
-                SqlCommand cmd = new SqlCommand("select dbo.Verificar_Asiento(@NoAsiento, @NombreSalon)", con);
+                SqlCommand cmd = new SqlCommand("select dbo.Verificar_Asiento(@NoAsiento, @IdEvento)", con);
                 con.Open();
                 DCliente.crearParametro(cmd, "@NoAsiento", SqlDbType.Int, asiento, 50);
-                DCliente.crearParametro(cmd, "@IdEvento", SqlDbType.VarChar, IdEvento, 50);
+                DCliente.crearParametro(cmd, "@IdEvento", SqlDbType.Int, IdEvento, 50);
                 v = int.Parse(cmd.ExecuteScalar().ToString());
             }
             catch
