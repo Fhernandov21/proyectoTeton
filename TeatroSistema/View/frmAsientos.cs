@@ -18,10 +18,12 @@ namespace TeatroSistema.View
 
         public int asiento;
         private string salon;
-        public frmAsientos(string salon)
+        private int idEvento;
+        public frmAsientos(string salon, int idEvento)
         {
             InitializeComponent();
             this.salon = salon;
+            this.idEvento = idEvento;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -42,7 +44,7 @@ namespace TeatroSistema.View
             int fila = dgvAsientosDisponibles.CurrentCell.RowIndex;
             int columna = dgvAsientosDisponibles.CurrentCell.ColumnIndex;
             
-            if (CVenta.Verificar_Asiento(asiento, this.salon) == 0)
+            if (CVenta.Verificar_Asiento(asiento, this.idEvento) == 0)
             {
                 MessageBox.Show("Asiento ocupado", "Mensaje del sistema");
                 return;
